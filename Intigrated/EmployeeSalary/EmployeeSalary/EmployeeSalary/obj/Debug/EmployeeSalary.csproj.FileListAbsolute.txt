@@ -1,0 +1,362 @@
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\EmployeeSalary.exe.config
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\EmployeeSalary.exe
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\EmployeeSalary.pdb
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.AssemblyReference.cache
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeSalary.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Properties.Resources.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.GenerateResource.cache
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.CoreCompileInputs.cache
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.exe
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.pdb
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeS.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\BouncyCastle.Crypto.dll
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Google.Protobuf.dll
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.dll
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Hash.xxHash.dll
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\MySql.Data.dll
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Buffers.dll
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Memory.dll
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Numerics.Vectors.dll
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Ubiety.Dns.Core.dll
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Zstandard.Net.dll
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Google.Protobuf.pdb
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Google.Protobuf.xml
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.xml
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Hash.xxHash.xml
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\MySql.Data.xml
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Buffers.xml
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Memory.xml
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Numerics.Vectors.xml
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.CopyComplete
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.OutgoingDash.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.EmployeeSalaryChart.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.MainDash.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormStockManage.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.SupplierBillsOutgoing.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormStockS.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\intigrateTest1.ITest1.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.AddNewIncome.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.BackupTesting.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Bill.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.IncomeFinanceMonthlyReport.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.IncomeTable.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ServiceTypes.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\itextsharp.dll
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\MySqlBackup.dll
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\itextsharp.xml
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.AddStock.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.CurrentStock.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ListForm.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ListRequired.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ReportStkForm.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.EmployeeSalaryReportDetailForm.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Form1sup.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.reportgrid.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.supcharts.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Supplierform.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.supplierlist.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Supplierprofile.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.PrintVehicle.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Form1.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.UpdateVehicle.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.VehicleHome.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.VehicleRegistration.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ViewVehicle.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployee.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeD.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Add_NewBK.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Available_SlotBK.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.BK_Main.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.BookingReport.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.DashSample.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Test.resources
+E:\ITP\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ViewForm.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\EmployeeSalary.exe.config
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\EmployeeSalary.exe
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\EmployeeSalary.pdb
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Google.Protobuf.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\itextsharp.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\MySql.Data.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\MySqlBackup.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Buffers.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Memory.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Zstandard.Net.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Google.Protobuf.pdb
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Google.Protobuf.xml
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\itextsharp.xml
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\MySql.Data.xml
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Buffers.xml
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Memory.xml
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.AssemblyReference.cache
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.AddNewIncome.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.AddStock.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Add_NewBK.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Available_SlotBK.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.BackupTesting.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Bill.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.BK_Main.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.BookingReport.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.CurrentStock.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.EmployeeSalaryChart.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.EmployeeSalaryReportDetailForm.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Form1sup.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployee.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeD.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeS.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeSalary.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.IncomeFinanceMonthlyReport.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.IncomeTable.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\intigrateTest1.ITest1.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ListForm.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ListRequired.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.MainDash.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.OutgoingDash.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.PrintVehicle.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Properties.Resources.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Form1.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.reportgrid.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ReportStkForm.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ServiceTypes.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.supcharts.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.SupplierBillsOutgoing.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Supplierform.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.supplierlist.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Supplierprofile.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Test.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.UpdateVehicle.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.VehicleHome.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.VehicleRegistration.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ViewForm.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ViewVehicle.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.GenerateResource.cache
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.CoreCompileInputs.cache
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.CopyComplete
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.exe
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.pdb
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.EmployeeReport.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Login.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.addcustomer.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.CompleteForm.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.CompleteTable2.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.CustomerReport.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.maincustomermanage.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.piechart.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.panel.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.SendMail.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\SmtpServer.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.IO.Pipelines.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\SmtpServer.xml
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.IO.Pipelines.xml
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.OutgoingDetails.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeOutgoing.resources
+C:\Users\rasika\Desktop\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeS2.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.addcustomer.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.AddNewIncome.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.AddStock.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Add_NewBK.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Available_SlotBK.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.BackupTesting.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Bill.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.BK_Main.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.BookingReport.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.CompleteForm.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.CompleteTable2.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.CurrentStock.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.CustomerReport.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.EmployeeReport.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.EmployeeSalaryChart.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.EmployeeSalaryReportDetailForm.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\Suppliermanage.Form1sup.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployee.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeD.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeOutgoing.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeS.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeS2.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeSalary.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.IncomeFinanceMonthlyReport.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.IncomeTable.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\intigrateTest1.ITest1.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ListForm.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ListRequired.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Login.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.maincustomermanage.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.MainDash.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.OutgoingDash.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.OutgoingDetails.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.piechart.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.PrintVehicle.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.panel.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Properties.Resources.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Form1.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\Suppliermanage.reportgrid.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ReportStkForm.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.SendMail.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ServiceTypes.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.supcharts.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.SupplierBillsOutgoing.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\Suppliermanage.Supplierform.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\Suppliermanage.supplierlist.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\Suppliermanage.Supplierprofile.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Test.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.UpdateVehicle.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.VehicleHome.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.VehicleRegistration.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ViewForm.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ViewVehicle.resources
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.exe
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.pdb
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\EmployeeSalary.exe.config
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\EmployeeSalary.exe
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\EmployeeSalary.pdb
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Google.Protobuf.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\itextsharp.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\MySql.Data.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\MySqlBackup.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\SmtpServer.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Buffers.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.IO.Pipelines.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Memory.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Zstandard.Net.dll
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Google.Protobuf.pdb
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Google.Protobuf.xml
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\itextsharp.xml
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\MySql.Data.xml
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\SmtpServer.xml
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Buffers.xml
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.IO.Pipelines.xml
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Memory.xml
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\DELL\Desktop\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.CopyComplete
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\EmployeeSalary.exe.config
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\EmployeeSalary.exe
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\EmployeeSalary.pdb
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\BouncyCastle.Crypto.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Google.Protobuf.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\itextsharp.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Hash.xxHash.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\MySql.Data.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\MySqlBackup.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\SmtpServer.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Buffers.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.IO.Pipelines.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Memory.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Numerics.Vectors.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Ubiety.Dns.Core.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Zstandard.Net.dll
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Google.Protobuf.pdb
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Google.Protobuf.xml
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\itextsharp.xml
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.xml
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\K4os.Hash.xxHash.xml
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\MySql.Data.xml
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\SmtpServer.xml
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Buffers.xml
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.IO.Pipelines.xml
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Memory.xml
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Numerics.Vectors.xml
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.AssemblyReference.cache
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.addcustomer.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.AddNewIncome.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.AddStock.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Add_NewBK.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Available_SlotBK.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.BackupTesting.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Bill.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.BK_Main.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.BookingReport.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.CompleteForm.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.CompleteTable2.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.CurrentStock.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.CustomerReport.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.EmployeeReport.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.EmployeeSalaryChart.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.EmployeeSalaryReportDetailForm.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\Suppliermanage.Form1sup.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployee.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeD.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeOutgoing.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeS.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeS2.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.FormEmployeeSalary.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.IncomeFinanceMonthlyReport.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.IncomeTable.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\intigrateTest1.ITest1.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ListForm.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ListRequired.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Login.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.maincustomermanage.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.MainDash.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.OutgoingDash.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.OutgoingDetails.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.piechart.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.PrintVehicle.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.panel.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Properties.Resources.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Form1.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\Suppliermanage.reportgrid.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ReportStkForm.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.SendMail.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ServiceTypes.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.supcharts.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.SupplierBillsOutgoing.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\Suppliermanage.Supplierform.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\Suppliermanage.supplierlist.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\Suppliermanage.Supplierprofile.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.Test.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.UpdateVehicle.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.VehicleHome.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.VehicleRegistration.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ViewForm.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.ViewVehicle.resources
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.GenerateResource.cache
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.CoreCompileInputs.cache
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.csproj.CopyComplete
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.exe
+D:\SLIIT\Y2S2\ITP\itp_project-itp2021_s2-_b06_g12 (2)\itp_project-itp2021_s2-_b06_g12\Final\Intigrated\EmployeeSalary\EmployeeSalary\EmployeeSalary\obj\Debug\EmployeeSalary.pdb

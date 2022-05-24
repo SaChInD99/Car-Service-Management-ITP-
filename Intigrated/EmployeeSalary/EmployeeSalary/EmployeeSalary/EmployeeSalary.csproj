@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC50235B-E3A3-42BA-9510-79286B3143BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EmployeeSalary</RootNamespace>
+    <AssemblyName>EmployeeSalary</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.14.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.14.0\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=5.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.5.0.1\lib\net461\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.26.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.26\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlBackup, Version=2.3.5.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlBackup.NET.2.3.5.3\lib\net472\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="SmtpServer, Version=9.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SmtpServer.9.0.1\lib\netstandard2.0\SmtpServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Pipelines, Version=4.0.2.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.4.7.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.26\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.26\lib\net452\Zstandard.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addcustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addcustomer.designer.cs">
+      <DependentUpon>addcustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewIncome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewIncome.designer.cs">
+      <DependentUpon>AddNewIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStock.designer.cs">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_NewBK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_NewBK.designer.cs">
+      <DependentUpon>Add_NewBK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Available_SlotBK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Available_SlotBK.designer.cs">
+      <DependentUpon>Available_SlotBK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackupTesting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackupTesting.designer.cs">
+      <DependentUpon>BackupTesting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill.designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BK_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BK_Main.designer.cs">
+      <DependentUpon>BK_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booking.cs" />
+    <Compile Include="BookingReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingReport.designer.cs">
+      <DependentUpon>BookingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookingtb.cs" />
+    <Compile Include="Complete.cs" />
+    <Compile Include="CompleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompleteForm.designer.cs">
+      <DependentUpon>CompleteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompleteTable2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompleteTable2.designer.cs">
+      <DependentUpon>CompleteTable2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurrentStock.designer.cs">
+      <DependentUpon>CurrentStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentStockDB.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerReport.designer.cs">
+      <DependentUpon>CustomerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbCustomer.cs" />
+    <Compile Include="DbEmployee.cs" />
+    <Compile Include="DbEmployeeS.cs" />
+    <Compile Include="DbStockBillss.cs" />
+    <Compile Include="dbsupplier.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeReport.Designer.cs">
+      <DependentUpon>EmployeeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeSalary.cs" />
+    <Compile Include="EmployeeSalaryChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeSalaryChart.Designer.cs">
+      <DependentUpon>EmployeeSalaryChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeSalaryReportDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeSalaryReportDetailForm.Designer.cs">
+      <DependentUpon>EmployeeSalaryReportDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1sup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1sup.designer.cs">
+      <DependentUpon>Form1sup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployee.designer.cs">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployeeD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeeD.designer.cs">
+      <DependentUpon>FormEmployeeD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployeeOutgoing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeeOutgoing.designer.cs">
+      <DependentUpon>FormEmployeeOutgoing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployeeS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeeS.Designer.cs">
+      <DependentUpon>FormEmployeeS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployeeS2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeeS2.designer.cs">
+      <DependentUpon>FormEmployeeS2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployeeSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeeSalary.Designer.cs">
+      <DependentUpon>FormEmployeeSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeDB.cs" />
+    <Compile Include="IncomeFinance.cs" />
+    <Compile Include="IncomeFinanceMonthlyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeFinanceMonthlyReport.designer.cs">
+      <DependentUpon>IncomeFinanceMonthlyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeTable.designer.cs">
+      <DependentUpon>IncomeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ITest1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ITest1.designer.cs">
+      <DependentUpon>ITest1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListForm.designer.cs">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListRequired.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListRequired.designer.cs">
+      <DependentUpon>ListRequired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListStock.cs" />
+    <Compile Include="ListStockDB.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maincustomermanage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maincustomermanage.designer.cs">
+      <DependentUpon>maincustomermanage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainDash.Designer.cs">
+      <DependentUpon>MainDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutgoingDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutgoingDash.Designer.cs">
+      <DependentUpon>OutgoingDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutgoingDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutgoingDetails.Designer.cs">
+      <DependentUpon>OutgoingDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="piechart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="piechart.designer.cs">
+      <DependentUpon>piechart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintVehicle.designer.cs">
+      <DependentUpon>PrintVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profile.designer.cs">
+      <DependentUpon>profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportgrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportgrid.designer.cs">
+      <DependentUpon>reportgrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportStkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportStkForm.designer.cs">
+      <DependentUpon>ReportStkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendMail.designer.cs">
+      <DependentUpon>SendMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SerType.cs" />
+    <Compile Include="ServiceTypeDB.cs" />
+    <Compile Include="ServiceTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceTypes.designer.cs">
+      <DependentUpon>ServiceTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockCost.cs" />
+    <Compile Include="StockDB.cs" />
+    <Compile Include="supcharts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supcharts.designer.cs">
+      <DependentUpon>supcharts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="suplist.cs" />
+    <Compile Include="supplier.cs" />
+    <Compile Include="SupplierBillsOutgoing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierBillsOutgoing.Designer.cs">
+      <DependentUpon>SupplierBillsOutgoing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplierform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplierform.designer.cs">
+      <DependentUpon>Supplierform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supplierlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supplierlist.designer.cs">
+      <DependentUpon>supplierlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplierprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplierprofile.designer.cs">
+      <DependentUpon>Supplierprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateVehicle.designer.cs">
+      <DependentUpon>UpdateVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleHome.designer.cs">
+      <DependentUpon>VehicleHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleRegistration.designer.cs">
+      <DependentUpon>VehicleRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm.designer.cs">
+      <DependentUpon>ViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewVehicle.designer.cs">
+      <DependentUpon>ViewVehicle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addcustomer.resx">
+      <DependentUpon>addcustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewIncome.resx">
+      <DependentUpon>AddNewIncome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStock.resx">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_NewBK.resx">
+      <DependentUpon>Add_NewBK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Available_SlotBK.resx">
+      <DependentUpon>Available_SlotBK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackupTesting.resx">
+      <DependentUpon>BackupTesting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BK_Main.resx">
+      <DependentUpon>BK_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingReport.resx">
+      <DependentUpon>BookingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompleteForm.resx">
+      <DependentUpon>CompleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompleteTable2.resx">
+      <DependentUpon>CompleteTable2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrentStock.resx">
+      <DependentUpon>CurrentStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerReport.resx">
+      <DependentUpon>CustomerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeReport.resx">
+      <DependentUpon>EmployeeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeSalaryChart.resx">
+      <DependentUpon>EmployeeSalaryChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeSalaryReportDetailForm.resx">
+      <DependentUpon>EmployeeSalaryReportDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1sup.resx">
+      <DependentUpon>Form1sup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployee.resx">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployeeD.resx">
+      <DependentUpon>FormEmployeeD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployeeOutgoing.resx">
+      <DependentUpon>FormEmployeeOutgoing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployeeS.resx">
+      <DependentUpon>FormEmployeeS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployeeS2.resx">
+      <DependentUpon>FormEmployeeS2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployeeSalary.resx">
+      <DependentUpon>FormEmployeeSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeFinanceMonthlyReport.resx">
+      <DependentUpon>IncomeFinanceMonthlyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeTable.resx">
+      <DependentUpon>IncomeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ITest1.resx">
+      <DependentUpon>ITest1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListForm.resx">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListRequired.resx">
+      <DependentUpon>ListRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maincustomermanage.resx">
+      <DependentUpon>maincustomermanage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainDash.resx">
+      <DependentUpon>MainDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutgoingDash.resx">
+      <DependentUpon>OutgoingDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutgoingDetails.resx">
+      <DependentUpon>OutgoingDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="piechart.resx">
+      <DependentUpon>piechart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintVehicle.resx">
+      <DependentUpon>PrintVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profile.resx">
+      <DependentUpon>profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportgrid.resx">
+      <DependentUpon>reportgrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportStkForm.resx">
+      <DependentUpon>ReportStkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendMail.resx">
+      <DependentUpon>SendMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceTypes.resx">
+      <DependentUpon>ServiceTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supcharts.resx">
+      <DependentUpon>supcharts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierBillsOutgoing.resx">
+      <DependentUpon>SupplierBillsOutgoing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplierform.resx">
+      <DependentUpon>Supplierform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supplierlist.resx">
+      <DependentUpon>supplierlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplierprofile.resx">
+      <DependentUpon>Supplierprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateVehicle.resx">
+      <DependentUpon>UpdateVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleHome.resx">
+      <DependentUpon>VehicleHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleRegistration.resx">
+      <DependentUpon>VehicleRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm.resx">
+      <DependentUpon>ViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewVehicle.resx">
+      <DependentUpon>ViewVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Report1.rdlc" />
+    <None Include="WindowsBillManagement.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+    <Content Include="MicrosoftTeams-image.png" />
+    <Content Include="Resources\back.png" />
+    <Content Include="Resources\calendar.png" />
+    <Content Include="Resources\download.png" />
+    <Content Include="Resources\email.jpg" />
+    <Content Include="Resources\email.png" />
+    <Content Include="Resources\email1.jpg" />
+    <Content Include="Resources\home.png" />
+    <Content Include="Resources\Icon-Supplier-Management-Capabilities-300x300 %281%29.png" />
+    <Content Include="Resources\imagdses %281%29.png" />
+    <Content Include="Resources\images %281%29.png" />
+    <Content Include="Resources\images.png" />
+    <Content Include="Resources\imagesw%29.png" />
+    <Content Include="Resources\imagfes.jpg" />
+    <Content Include="Resources\ims.jpg" />
+    <Content Include="Resources\manage.png" />
+    <Content Include="Resources\sd.jpg" />
+    <Content Include="Resources\sea.png" />
+    <Content Include="Resources\settings.png" />
+    <Content Include="Resources\sup%29.png" />
+    <Content Include="Resources\sup.png" />
+    <Content Include="Resources\yahoo.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

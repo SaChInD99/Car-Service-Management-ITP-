@@ -1,0 +1,3039 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmtpServer</name>
+    </assembly>
+    <members>
+        <member name="M:SmtpServer.AuthenticationContext.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.AuthenticationContext.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="user">The name of the user that was authenticated.</param>
+        </member>
+        <member name="P:SmtpServer.AuthenticationContext.User">
+            <summary>
+            The name of the user that was authenticated.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.AuthenticationContext.IsAuthenticated">
+            <summary>
+            Returns a value indicating whether or nor the current session is authenticated.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Authentication.DelegatingUserAuthenticator.#ctor(System.Action{System.String,System.String})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="delegate">THe delegate to execute for the authentication.</param>
+        </member>
+        <member name="M:SmtpServer.Authentication.DelegatingUserAuthenticator.#ctor(System.Func{System.String,System.String,System.Boolean})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="delegate">THe delegate to execute for the authentication.</param>
+        </member>
+        <member name="M:SmtpServer.Authentication.DelegatingUserAuthenticator.#ctor(System.Func{SmtpServer.ISessionContext,System.String,System.String,System.Boolean})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="delegate">THe delegate to execute for the authentication.</param>
+        </member>
+        <member name="M:SmtpServer.Authentication.DelegatingUserAuthenticator.Wrap(System.Func{System.String,System.String,System.Boolean})">
+            <summary>
+            Wrap the delegate into a function that is compatible with the signature.
+            </summary>
+            <param name="delegate">The delegate to wrap.</param>
+            <returns>The function that is compatible with the main signature.</returns>
+        </member>
+        <member name="M:SmtpServer.Authentication.DelegatingUserAuthenticator.Wrap(System.Action{System.String,System.String})">
+            <summary>
+            Wrap the delegate into a function that is compatible with the signature.
+            </summary>
+            <param name="delegate">The delegate to wrap.</param>
+            <returns>The function that is compatible with the main signature.</returns>
+        </member>
+        <member name="M:SmtpServer.Authentication.DelegatingUserAuthenticator.AuthenticateAsync(SmtpServer.ISessionContext,System.String,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Authenticate a user account.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="user">The user to authenticate.</param>
+            <param name="password">The password of the user.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>true if the user is authenticated, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Authentication.DelegatingUserAuthenticatorFactory.CreateInstance(SmtpServer.ISessionContext)">
+            <summary>
+            Creates an instance of the service for the given session context.
+            </summary>
+            <param name="context">The session context.</param>
+            <returns>The service instance for the session context.</returns>
+        </member>
+        <member name="M:SmtpServer.Authentication.IUserAuthenticator.AuthenticateAsync(SmtpServer.ISessionContext,System.String,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Authenticate a user account.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="user">The user to authenticate.</param>
+            <param name="password">The password of the user.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>true if the user is authenticated, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Authentication.UserAuthenticator.AuthenticateAsync(SmtpServer.ISessionContext,System.String,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Authenticate a user account.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="user">The user to authenticate.</param>
+            <param name="password">The password of the user.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>true if the user is authenticated, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Authentication.UserAuthenticator.DefaultUserAuthenticator.AuthenticateAsync(SmtpServer.ISessionContext,System.String,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Authenticate a user account.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="user">The user to authenticate.</param>
+            <param name="password">The password of the user.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>true if the user is authenticated, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.ComponentModel.DisposableContainer`1.#ctor(`0)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="instance">The instance to dispose.</param>
+        </member>
+        <member name="M:SmtpServer.ComponentModel.DisposableContainer`1.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.ComponentModel.DisposableContainer`1.Instance">
+            <summary>
+            Returns the instance.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.ComponentModel.ISessionContextInstanceFactory`1.CreateInstance(SmtpServer.ISessionContext)">
+            <summary>
+            Creates an instance of the service for the given session context.
+            </summary>
+            <param name="context">The session context.</param>
+            <returns>The service instance for the session context.</returns>
+        </member>
+        <member name="M:SmtpServer.ComponentModel.ServiceProvider.Add(SmtpServer.Net.IEndpointListenerFactory)">
+            <summary>
+            Add an instance of the endpoint listener factory.
+            </summary>
+            <param name="endpointListenerFactory">The endpoint listener factory.</param>
+        </member>
+        <member name="M:SmtpServer.ComponentModel.ServiceProvider.Add(SmtpServer.Authentication.IUserAuthenticatorFactory)">
+            <summary>
+            Add an instance of the user authenticator factory.
+            </summary>
+            <param name="userAuthenticatorFactory">The user authenticator factory.</param>
+        </member>
+        <member name="M:SmtpServer.ComponentModel.ServiceProvider.Add(SmtpServer.Authentication.IUserAuthenticator)">
+            <summary>
+            Add an instance of the user authenticator.
+            </summary>
+            <param name="userAuthenticator">The user authenticator.</param>
+        </member>
+        <member name="M:SmtpServer.ComponentModel.ServiceProvider.Add(SmtpServer.Protocol.ISmtpCommandFactory)">
+            <summary>
+            Add an instance of the SMTP command factory.
+            </summary>
+            <param name="smtpCommandFactory">The SMTP command factory.</param>
+        </member>
+        <member name="M:SmtpServer.ComponentModel.ServiceProvider.Add(SmtpServer.Storage.IMailboxFilterFactory)">
+            <summary>
+            Add an instance of the Mailbox Filter Factory.
+            </summary>
+            <param name="mailboxFilterFactory">The mailbox filter factory.</param>
+        </member>
+        <member name="M:SmtpServer.ComponentModel.ServiceProvider.Add(SmtpServer.Storage.IMailboxFilter)">
+            <summary>
+            Add an instance of the Mailbox Filter.
+            </summary>
+            <param name="mailboxFilter">The mailbox filter.</param>
+        </member>
+        <member name="M:SmtpServer.ComponentModel.ServiceProvider.Add(SmtpServer.Storage.IMessageStoreFactory)">
+            <summary>
+            Add an instance of the Message Store Factory.
+            </summary>
+            <param name="messageStoreFactory">The message store factory.</param>
+        </member>
+        <member name="M:SmtpServer.ComponentModel.ServiceProvider.Add(SmtpServer.Storage.IMessageStore)">
+            <summary>
+            Add an instance of the Message Store.
+            </summary>
+            <param name="messageStore">The message store.</param>
+        </member>
+        <member name="M:SmtpServer.ComponentModel.ServiceProvider.GetService(System.Type)">
+            <summary>
+            Gets the service object of the specified type.
+            </summary>
+            <param name="serviceType">An object that specifies the type of service object to get.</param>
+            <returns>A service object of type <paramref name="serviceType">serviceType</paramref>.   -or-  null if there is no service object of type <paramref name="serviceType">serviceType</paramref>.</returns>
+        </member>
+        <member name="M:SmtpServer.EndpointDefinitionBuilder.Build">
+            <summary>
+            Build the endpoint definition.
+            </summary>
+            <returns>The endpoint definition that was built.</returns>
+        </member>
+        <member name="M:SmtpServer.EndpointDefinitionBuilder.Endpoint(System.Net.IPEndPoint)">
+            <summary>
+            Sets the endpoint to listen on.
+            </summary>
+            <param name="endpoint">The endpoint to listen on.</param>
+            <returns>The endpoint builder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.EndpointDefinitionBuilder.Port(System.Int32,System.Boolean)">
+            <summary>
+            Adds an endpoint with the given port.
+            </summary>
+            <param name="port">The port to add as the endpoint.</param>
+            <param name="isSecure">Indicates whether the port is secure by default.</param>
+            <returns>A EndpointDefinitionBuilder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.EndpointDefinitionBuilder.Port(System.Int32)">
+            <summary>
+            Adds an endpoint with the given port.
+            </summary>
+            <param name="port">The port for the endpoint to listen on.</param>
+            <returns>The endpoint builder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.EndpointDefinitionBuilder.IsSecure(System.Boolean)">
+            <summary>
+            Sets a value indicating whether the endpoint is secure by default.
+            </summary>
+            <param name="value">true to enable SSL by default, false if not.</param>
+            <returns>The endpoint builder to continue building on.</returns>
+            <remarks>If this is set to true, then SSL will be enabled during the connection phase.</remarks>
+        </member>
+        <member name="M:SmtpServer.EndpointDefinitionBuilder.AuthenticationRequired(System.Boolean)">
+            <summary>
+            Sets a value indicating whether the client must authenticate in order to proceed.
+            </summary>
+            <param name="value">true if the client must issue an AUTH command before sending any mail, false if not.</param>
+            <returns>A EndpointDefinitionBuilder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.EndpointDefinitionBuilder.AllowUnsecureAuthentication(System.Boolean)">
+            <summary>
+            Sets a value indicating whether authentication should be allowed on an unsecure session.
+            </summary>
+            <param name="value">true if the AUTH command is available on an unsecure session, false if not.</param>
+            <returns>A EndpointDefinitionBuilder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.EndpointDefinitionBuilder.ReadTimeout(System.TimeSpan)">
+            <summary>
+            Sets the read timeout to apply to stream operations.
+            </summary>
+            <param name="value">The timeout value to apply to read operations.</param>
+            <returns>A EndpointDefinitionBuilder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.EndpointDefinitionBuilder.Certificate(System.Security.Cryptography.X509Certificates.X509Certificate)">
+            <summary>
+            Sets the X509 certificate to use when starting a TLS session.
+            </summary>
+            <param name="value">The server's certificate to use when starting a TLS session.</param>
+            <returns>A EndpointDefinitionBuilder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.EndpointDefinitionBuilder.SupportedSslProtocols(System.Security.Authentication.SslProtocols)">
+            <summary>
+            Sets the supported SSL protocols.
+            </summary>
+            <param name="value">The supported SSL protocols.</param>
+            <returns>A EndpointDefinitionBuilder to continue building on.</returns>
+        </member>
+        <member name="P:SmtpServer.EndpointDefinitionBuilder.EndpointDefinition.Endpoint">
+            <summary>
+            The IP endpoint to listen on.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.EndpointDefinitionBuilder.EndpointDefinition.IsSecure">
+            <summary>
+            Indicates whether the endpoint is secure by default.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.EndpointDefinitionBuilder.EndpointDefinition.AuthenticationRequired">
+            <summary>
+            Gets a value indicating whether the client must authenticate in order to proceed.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.EndpointDefinitionBuilder.EndpointDefinition.AllowUnsecureAuthentication">
+            <summary>
+            Gets a value indicating whether authentication should be allowed on an unsecure session.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.EndpointDefinitionBuilder.EndpointDefinition.ReadTimeout">
+            <summary>
+            The timeout on each individual buffer read.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.EndpointDefinitionBuilder.EndpointDefinition.ServerCertificate">
+            <summary>
+            Gets the Server Certificate to use when starting a TLS session.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.EndpointDefinitionBuilder.EndpointDefinition.SupportedSslProtocols">
+            <summary>
+            The supported SSL protocols.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.TaskExtensions.WithCancellation(System.Threading.Tasks.Task,System.Threading.CancellationToken)">
+            <summary>
+            Configures the task to stop waiting when the cancellation has been requested.
+            </summary>
+            <param name="task">The task to wait for.</param>
+            <param name="cancellationToken">The cancellation token to watch.</param>
+            <returns>The original task.</returns>
+        </member>
+        <member name="M:SmtpServer.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken)">
+            <summary>
+            Configures the task to stop waiting when the cancellation has been requested.
+            </summary>
+            <typeparam name="T">The return type of the task.</typeparam>
+            <param name="task">The task to wait for.</param>
+            <param name="cancellationToken">The cancellation token to watch.</param>
+            <returns>The original task.</returns>
+        </member>
+        <member name="P:SmtpServer.IEndpointDefinition.Endpoint">
+            <summary>
+            The IP endpoint to listen on.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.IEndpointDefinition.IsSecure">
+            <summary>
+            Indicates whether the endpoint is secure by default.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.IEndpointDefinition.AuthenticationRequired">
+            <summary>
+            Gets a value indicating whether the client must authenticate in order to proceed.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.IEndpointDefinition.AllowUnsecureAuthentication">
+            <summary>
+            Gets a value indicating whether authentication should be allowed on an unsecure session.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.IEndpointDefinition.ReadTimeout">
+            <summary>
+            The timeout on each individual buffer read.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.IEndpointDefinition.ServerCertificate">
+            <summary>
+            Gets the Server Certificate to use when starting a TLS session.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.IEndpointDefinition.SupportedSslProtocols">
+            <summary>
+            The supported SSL protocols.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.ILogger.LogVerbose(System.String,System.Object[])">
+            <summary>
+            Log a verbose message.
+            </summary>
+            <param name="format">The message format.</param>
+            <param name="args">The message arguments.</param>
+        </member>
+        <member name="P:SmtpServer.IMessageTransaction.From">
+            <summary>
+            Gets or sets the mailbox that is sending the message.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.IMessageTransaction.To">
+            <summary>
+            Gets the collection of mailboxes that the message is to be delivered to.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.IMessageTransaction.Parameters">
+            <summary>
+            The list of parameters that were supplied by the client.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.IO.BuffersExtension.TryFind(System.Buffers.ReadOnlySequence{System.Byte},System.ReadOnlySpan{System.Byte},System.SequencePosition@,System.SequencePosition@)">
+            <summary>
+            Try to find the first occurrance of a sequence in the given buffer.
+            </summary>
+            <param name="source">The source to find the sequence in.</param>
+            <param name="sequence">The sequence to find in the source.</param>
+            <param name="head">The position that the sequence was found.</param>
+            <param name="tail">The position that the sequence ended.</param>
+            <returns>Returns true if the sequence could be found, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.IO.ISecurableDuplexPipe.UpgradeAsync(System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Authentication.SslProtocols,System.Threading.CancellationToken)">
+            <summary>
+            Upgrade to a secure pipeline.
+            </summary>
+            <param name="certificate">The X509Certificate used to authenticate the server.</param>
+            <param name="protocols">The value that represents the protocol used for authentication.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>A task that asynchronously performs the operation.</returns>
+        </member>
+        <member name="P:SmtpServer.IO.ISecurableDuplexPipe.IsSecure">
+            <summary>
+            Returns a value indicating whether or not the current pipeline is secure.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.IO.PipeReaderExtensions.ReadUntilAsync(System.IO.Pipelines.PipeReader,System.Byte[],System.Func{System.Buffers.ReadOnlySequence{System.Byte},System.Threading.Tasks.Task},System.Threading.CancellationToken)">
+            <summary>
+            Read from the reader until the sequence is found.
+            </summary>
+            <param name="reader">The reader to read from.</param>
+            <param name="sequence">The sequence to find to terminate the read operation.</param>
+            <param name="func">The callback to execute to process the buffer.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The value that was read from the buffer.</returns>
+        </member>
+        <member name="M:SmtpServer.IO.PipeReaderExtensions.ReadLineAsync(System.IO.Pipelines.PipeReader,System.Func{System.Buffers.ReadOnlySequence{System.Byte},System.Threading.Tasks.Task},System.Threading.CancellationToken)">
+            <summary>
+            Reads a line from the reader.
+            </summary>
+            <param name="reader">The reader to read from.</param>
+            <param name="func">The action to process the buffer.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>A task that can be used to wait on the operation on complete.</returns>
+        </member>
+        <member name="M:SmtpServer.IO.PipeReaderExtensions.ReadLineAsync(System.IO.Pipelines.PipeReader,System.Threading.CancellationToken)">
+            <summary>
+            Reads a line from the reader.
+            </summary>
+            <param name="reader">The reader to read from.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>A task that can be used to wait on the operation on complete.</returns>
+        </member>
+        <member name="M:SmtpServer.IO.PipeReaderExtensions.ReadLineAsync(System.IO.Pipelines.PipeReader,System.Text.Encoding,System.Threading.CancellationToken)">
+            <summary>
+            Reads a line from the reader.
+            </summary>
+            <param name="reader">The reader to read from.</param>
+            <param name="encoding">The encoding to use when converting the input.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>A task that can be used to wait on the operation on complete.</returns>
+        </member>
+        <member name="M:SmtpServer.IO.PipeReaderExtensions.ReadDotBlockAsync(System.IO.Pipelines.PipeReader,System.Func{System.Buffers.ReadOnlySequence{System.Byte},System.Threading.Tasks.Task},System.Threading.CancellationToken)">
+            <summary>
+            Reads a line from the reader.
+            </summary>
+            <param name="reader">The reader to read from.</param>
+            <param name="func">The action to process the buffer.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The value that was read from the buffer.</returns>
+        </member>
+        <member name="M:SmtpServer.IO.PipeWriterExtensions.WriteLine(System.IO.Pipelines.PipeWriter,System.String)">
+            <summary>
+            Write a line of text to the pipe.
+            </summary>
+            <param name="writer">The writer to perform the operation on.</param>
+            <param name="text">The text to write to the writer.</param>
+        </member>
+        <member name="M:SmtpServer.IO.PipeWriterExtensions.WriteLine(System.IO.Pipelines.PipeWriter,System.Text.Encoding,System.String)">
+            <summary>
+            Write a line of text to the writer.
+            </summary>
+            <param name="writer">The writer to perform the operation on.</param>
+            <param name="encoding">The encoding to use for the text.</param>
+            <param name="text">The text to write to the writer.</param>
+        </member>
+        <member name="M:SmtpServer.IO.PipeWriterExtensions.WriteReplyAsync(System.IO.Pipelines.PipeWriter,SmtpServer.Protocol.SmtpResponse,System.Threading.CancellationToken)">
+            <summary>
+            Write a reply to the client.
+            </summary>
+            <param name="writer">The writer to perform the operation on.</param>
+            <param name="response">The response to write.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>A task which performs the operation.</returns>
+        </member>
+        <member name="M:SmtpServer.IO.SecurableDuplexPipe.#ctor(System.IO.Stream,System.Action)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="stream">The stream that the pipe is reading and writing to.</param>
+            <param name="disposeAction">The action to execute when the stream has been disposed.</param>
+        </member>
+        <member name="M:SmtpServer.IO.SecurableDuplexPipe.UpgradeAsync(System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Authentication.SslProtocols,System.Threading.CancellationToken)">
+            <summary>
+            Upgrade to a secure pipeline.
+            </summary>
+            <param name="certificate">The X509Certificate used to authenticate the server.</param>
+            <param name="protocols">The value that represents the protocol used for authentication.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>A task that asynchronously performs the operation.</returns>
+        </member>
+        <member name="M:SmtpServer.IO.SecurableDuplexPipe.Dispose(System.Boolean)">
+            <summary>
+            Releases the unmanaged resources used by the stream and optionally releases the managed resources.
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:SmtpServer.IO.SecurableDuplexPipe.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.IO.SecurableDuplexPipe.Input">
+            <summary>
+            Gets the <see cref="T:System.IO.Pipelines.PipeReader" /> half of the duplex pipe.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.IO.SecurableDuplexPipe.Output">
+            <summary>
+            Gets the <see cref="T:System.IO.Pipelines.PipeWriter" /> half of the duplex pipe.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.IO.SecurableDuplexPipe.IsSecure">
+            <summary>
+            Returns a value indicating whether or not the current pipeline is secure.
+            </summary>
+        </member>
+        <member name="E:SmtpServer.ISessionContext.CommandExecuting">
+            <summary>
+            Fired when a command is about to execute.
+            </summary>
+        </member>
+        <member name="E:SmtpServer.ISessionContext.CommandExecuted">
+            <summary>
+            Fired when a command has finished executing.
+            </summary>
+        </member>
+        <member name="E:SmtpServer.ISessionContext.SessionAuthenticated">
+            <summary>
+            Fired when the session has been authenticated.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.ISessionContext.ServiceProvider">
+            <summary>
+            The service provider instance. 
+            </summary>
+        </member>
+        <member name="P:SmtpServer.ISessionContext.ServerOptions">
+            <summary>
+            Gets the options that the server was created with.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.ISessionContext.EndpointDefinition">
+            <summary>
+            Gets the endpoint definition.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.ISessionContext.Pipe">
+            <summary>
+            Gets the pipeline to read from and write to.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.ISessionContext.Authentication">
+            <summary>
+            Returns the authentication context.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.ISessionContext.Properties">
+            <summary>
+            Returns a set of propeties for the current session.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.ISmtpServerOptions.MaxMessageSize">
+            <summary>
+            Gets the maximum size of a message.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.ISmtpServerOptions.MaxRetryCount">
+            <summary>
+            The maximum number of retries before quitting the session.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.ISmtpServerOptions.MaxAuthenticationAttempts">
+            <summary>
+            The maximum number of authentication attempts.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.ISmtpServerOptions.ServerName">
+            <summary>
+            Gets the SMTP server name.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.ISmtpServerOptions.Endpoints">
+            <summary>
+            Gets the collection of endpoints to listen on.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.ISmtpServerOptions.CommandWaitTimeout">
+            <summary>
+            The timeout to use when waiting for a command from the client.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.ISmtpServerOptions.NetworkBufferSize">
+            <summary>
+            The size of the buffer that is read from each call to the underlying network client.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.Mail.IMailbox.User">
+            <summary>
+            Gets the user/account name.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.Mail.IMailbox.Host">
+            <summary>
+            Gets the host server.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Mail.MailboxExtensionMethods.AsAddress(SmtpServer.Mail.IMailbox)">
+            <summary>
+            Returns the Mailbox as an Address string.
+            </summary>
+            <param name="mailbox">The mailbox to perform the operation on.</param>
+            <returns>The address string that represents the mailbox.</returns>
+        </member>
+        <member name="M:SmtpServer.Mail.Mailbox.#ctor(System.String,System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="user">The user/account name.</param>
+            <param name="host">The host server.</param>
+        </member>
+        <member name="M:SmtpServer.Mail.Mailbox.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="address">The email address to create the mailbox from.</param>
+        </member>
+        <member name="P:SmtpServer.Mail.Mailbox.User">
+            <summary>
+            Gets the user/account name.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.Mail.Mailbox.Host">
+            <summary>
+            Gets the host server.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Net.EndpointEventArgs.#ctor(SmtpServer.IEndpointDefinition,System.Net.EndPoint)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="endpointDefinition">The endpoint definition.</param>
+            <param name="localEndPoint">The locally bound endpoint.</param>
+        </member>
+        <member name="P:SmtpServer.Net.EndpointEventArgs.EndpointDefinition">
+            <summary>
+            Returns the endpoint definition.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.Net.EndpointEventArgs.LocalEndPoint">
+            <summary>
+            Returns the locally bound endpoint
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Net.EndpointListener.#ctor(SmtpServer.IEndpointDefinition,System.Net.Sockets.TcpListener,System.Action)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="endpointDefinition">The endpoint definition to create the listener for.</param>
+            <param name="tcpListener">The TCP listener for the endpoint.</param>
+            <param name="disposeAction">The action to execute when the listener has been disposed.</param>
+        </member>
+        <member name="M:SmtpServer.Net.EndpointListener.GetPipeAsync(SmtpServer.ISessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Returns a securable pipe to the endpoint.
+            </summary>
+            <param name="context">The session context that the pipe is being created for.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The securable pipe from the endpoint.</returns>
+        </member>
+        <member name="M:SmtpServer.Net.EndpointListener.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="E:SmtpServer.Net.EndpointListenerFactory.EndpointStarted">
+            <summary>
+            Raised when an endpoint has been started.
+            </summary>
+        </member>
+        <member name="E:SmtpServer.Net.EndpointListenerFactory.EndpointStopped">
+            <summary>
+            Raised when an endpoint has been stopped.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Net.EndpointListenerFactory.CreateListener(SmtpServer.IEndpointDefinition)">
+            <summary>
+            Create an instance of an endpoint listener for the specified endpoint definition.
+            </summary>
+            <param name="endpointDefinition">The endpoint definition to create the listener for.</param>
+            <returns>The endpoint listener for the specified endpoint definition.</returns>
+        </member>
+        <member name="M:SmtpServer.Net.EndpointListenerFactory.OnEndpointStarted(SmtpServer.Net.EndpointEventArgs)">
+            <summary>
+            Raises the EndPointStarted Event.
+            </summary>
+            <param name="args">The event data.</param>
+        </member>
+        <member name="M:SmtpServer.Net.EndpointListenerFactory.OnEndpointStopped(SmtpServer.Net.EndpointEventArgs)">
+            <summary>
+            Raises the EndPointStopped Event.
+            </summary>
+            <param name="args">The event data.</param>
+        </member>
+        <member name="M:SmtpServer.Net.IEndpointListener.GetPipeAsync(SmtpServer.ISessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Returns a securtable pipe to the endpoint.
+            </summary>
+            <param name="context">The session context that the pipe is being created for.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The securable pipe from the endpoint.</returns>
+        </member>
+        <member name="M:SmtpServer.Net.IEndpointListenerFactory.CreateListener(SmtpServer.IEndpointDefinition)">
+            <summary>
+            Create an instance of an endpoint listener for the specified endpoint definition.
+            </summary>
+            <param name="endpointDefinition">The endpoint definition to create the listener for.</param>
+            <returns>The endpoint listener for the specified endpoint definition.</returns>
+        </member>
+        <member name="M:SmtpServer.NullLogger.LogVerbose(System.String,System.Object[])">
+            <summary>
+            Log a verbose message.
+            </summary>
+            <param name="format">The message format.</param>
+            <param name="args">The message arguments.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.AuthCommand.#ctor(SmtpServer.Protocol.AuthenticationMethod,System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="method">The authentication method.</param>
+            <param name="parameter">The authentication parameter.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.AuthCommand.ExecuteAsync(SmtpServer.SmtpSessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Execute the command.
+            </summary>
+            <param name="context">The execution context to operate on.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>Returns true if the command executed successfully such that the transition to the next state should occur, false 
+            if the current state is to be maintained.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.AuthCommand.TryPlainAsync(SmtpServer.ISessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Attempt a PLAIN login sequence.
+            </summary>
+            <param name="context">The execution context to operate on.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>true if the PLAIN login sequence worked, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.AuthCommand.TryExtractFromBase64(System.String)">
+            <summary>
+            Attempt to extract the user name and password combination from a single line base64 encoded string.
+            </summary>
+            <param name="base64">The base64 encoded string to extract the user name and password from.</param>
+            <returns>true if the user name and password were extracted from the base64 encoded string, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.AuthCommand.TryLoginAsync(SmtpServer.ISessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Attempt a LOGIN login sequence.
+            </summary>
+            <param name="context">The execution context to operate on.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>true if the LOGIN login sequence worked, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.AuthCommand.ReadBase64EncodedLineAsync(System.IO.Pipelines.PipeReader,System.Threading.CancellationToken)">
+            <summary>
+            Read a Base64 encoded line.
+            </summary>
+            <param name="reader">The pipe to read from.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The decoded Base64 string.</returns>
+        </member>
+        <member name="P:SmtpServer.Protocol.AuthCommand.Method">
+            <summary>
+            The authentication method.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.Protocol.AuthCommand.Parameter">
+            <summary>
+            The authentication parameter.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.DataCommand.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.DataCommand.ExecuteAsync(SmtpServer.SmtpSessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Execute the command.
+            </summary>
+            <param name="context">The execution context to operate on.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>Returns true if the command executed successfully such that the transition to the next state should occurr, false 
+            if the current state is to be maintained.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.EhloCommand.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="domainOrAddress">The domain name or address literal.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.EhloCommand.ExecuteAsync(SmtpServer.SmtpSessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Execute the command.
+            </summary>
+            <param name="context">The execution context to operate on.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>Returns true if the command executed successfully such that the transition to the next state should occurr, false 
+            if the current state is to be maintained.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.EhloCommand.GetGreeting(SmtpServer.ISessionContext)">
+            <summary>
+            Returns the greeting to display to the remote host.
+            </summary>
+            <param name="context">The session context.</param>
+            <returns>The greeting text to display to the remote host.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.EhloCommand.GetExtensions(SmtpServer.ISessionContext)">
+            <summary>
+            Returns the list of extensions that are current for the context.
+            </summary>
+            <param name="context">The session context.</param>
+            <returns>The list of extensions that are current for the context.</returns>
+        </member>
+        <member name="P:SmtpServer.Protocol.EhloCommand.DomainOrAddress">
+            <summary>
+            Gets the domain name or address literal.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.HeloCommand.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="domainOrAddress">The domain name.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.HeloCommand.ExecuteAsync(SmtpServer.SmtpSessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Execute the command.
+            </summary>
+            <param name="context">The execution context to operate on.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>Returns true if the command executed successfully such that the transition to the next state should occurr, false 
+            if the current state is to be maintained.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.HeloCommand.GetGreeting(SmtpServer.ISessionContext)">
+            <summary>
+            Returns the greeting to display to the remote host.
+            </summary>
+            <param name="context">The session context.</param>
+            <returns>The greeting text to display to the remote host.</returns>
+        </member>
+        <member name="P:SmtpServer.Protocol.HeloCommand.DomainOrAddress">
+            <summary>
+            Gets the domain name.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.ISmtpCommandFactory.CreateHelo(System.String)">
+            <summary>
+            Create a HELO command.
+            </summary>
+            <param name="domainOrAddress">The domain name or address literal.</param>
+            <returns>The HELO command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.ISmtpCommandFactory.CreateEhlo(System.String)">
+            <summary>
+            Create a EHLO command.
+            </summary>
+            <param name="domainOrAddress">The domain name or address literal.</param>
+            <returns>The EHLO command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.ISmtpCommandFactory.CreateMail(SmtpServer.Mail.IMailbox,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})">
+            <summary>
+            Create a MAIL command.
+            </summary>
+            <param name="address">The Mailbox address that the message is from.</param>
+            <param name="parameters">The optional parameters for the message.</param>
+            <returns>The MAIL command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.ISmtpCommandFactory.CreateRcpt(SmtpServer.Mail.IMailbox)">
+            <summary>
+            Create a RCPT command.
+            </summary>
+            <param name="address">The address that the mail is to.</param>
+            <returns>The RCPT command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.ISmtpCommandFactory.CreateData">
+            <summary>
+            Create a DATA command.
+            </summary>
+            <returns>The DATA command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.ISmtpCommandFactory.CreateQuit">
+            <summary>
+            Create a QUIT command.
+            </summary>
+            <returns>The QUIT command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.ISmtpCommandFactory.CreateNoop">
+            <summary>
+            Create a NOOP command.
+            </summary>
+            <returns>The NOOP command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.ISmtpCommandFactory.CreateRset">
+            <summary>
+            Create a RSET command.
+            </summary>
+            <returns>The RSET command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.ISmtpCommandFactory.CreateStartTls">
+            <summary>
+            Create a STARTTLS command.
+            </summary>
+            <returns>The STARTTLS command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.ISmtpCommandFactory.CreateAuth(SmtpServer.Protocol.AuthenticationMethod,System.String)">
+            <summary>
+            Create a AUTH command.
+            </summary>
+            <param name="method">The authentication method.</param>
+            <param name="parameter">The authentication parameter.</param>
+            <returns>The AUTH command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.ISmtpCommandFactory.CreateProxy(System.Net.IPEndPoint,System.Net.IPEndPoint)">
+            <summary>
+            Create a PROXY command.
+            </summary>
+            <param name="sourceEndpoint">The source endpoint.</param>
+            <param name="destinationEndpoint">The destination endpoint.</param>
+            <returns>The PROXY command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.MailCommand.#ctor(SmtpServer.Mail.IMailbox,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="address">The address.</param>
+            <param name="parameters">The list of extended (ESMTP) parameters.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.MailCommand.ExecuteAsync(SmtpServer.SmtpSessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Execute the command.
+            </summary>
+            <param name="context">The execution context to operate on.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>Returns true if the command executed successfully such that the transition to the next state should occurr, false 
+            if the current state is to be maintained.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.MailCommand.GetMessageSize">
+            <summary>
+            Gets the estimated message size supplied from the ESMTP command extension.
+            </summary>
+            <returns>The estimated message size that was supplied by the client.</returns>
+        </member>
+        <member name="P:SmtpServer.Protocol.MailCommand.Address">
+            <summary>
+            Gets the address that the mail is from.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.Protocol.MailCommand.Parameters">
+            <summary>
+            The list of extended mail parameters.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.NoopCommand.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.NoopCommand.ExecuteAsync(SmtpServer.SmtpSessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Execute the command.
+            </summary>
+            <param name="context">The execution context to operate on.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>Returns true if the command executed successfully such that the transition to the next state should occurr, false 
+            if the current state is to be maintained.</returns>
+        </member>
+        <member name="T:SmtpServer.Protocol.ProxyCommand">
+            <summary>
+            Support for proxy protocol version 1 header for use with HAProxy.
+            Documented at http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt
+            This should always (and only ever) be the first command seen on a new connection from HAProxy
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.ProxyCommand.#ctor(System.Net.IPEndPoint,System.Net.IPEndPoint)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="sourceEndpoint">The source endpoint.</param>
+            <param name="destinationEndpoint">The destination endpoint.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.ProxyCommand.ExecuteAsync(SmtpServer.SmtpSessionContext,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="P:SmtpServer.Protocol.ProxyCommand.SourceEndpoint">
+            <summary>
+            The source endpoint.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.Protocol.ProxyCommand.DestinationEndpoint">
+            <summary>
+            The destination endpoint.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.QuitCommand.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.QuitCommand.ExecuteAsync(SmtpServer.SmtpSessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Execute the command.
+            </summary>
+            <param name="context">The execution context to operate on.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>Returns true if the command executed successfully such that the transition to the next state should occurr, false 
+            if the current state is to be maintained.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.RcptCommand.#ctor(SmtpServer.Mail.IMailbox)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="address">The address.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.RcptCommand.ExecuteAsync(SmtpServer.SmtpSessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Execute the command.
+            </summary>
+            <param name="context">The execution context to operate on.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>Returns true if the command executed successfully such that the transition to the next state should occurr, false 
+            if the current state is to be maintained.</returns>
+        </member>
+        <member name="P:SmtpServer.Protocol.RcptCommand.Address">
+            <summary>
+            Gets the address that the mail is to.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.RsetCommand.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.RsetCommand.ExecuteAsync(SmtpServer.SmtpSessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Execute the command.
+            </summary>
+            <param name="context">The execution context to operate on.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>Returns true if the command executed successfully such that the transition to the next state should occurr, false 
+            if the current state is to be maintained.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommand.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="name">The name of the command.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommand.ExecuteAsync(SmtpServer.SmtpSessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Execute the command.
+            </summary>
+            <param name="context">The execution context to operate on.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>Returns true if the command executed successfully such that the transition to the next state should occurr, false 
+            if the current state is to be maintained.</returns>
+        </member>
+        <member name="P:SmtpServer.Protocol.SmtpCommand.Name">
+            <summary>
+            The name of the command.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandFactory.CreateHelo(System.String)">
+            <summary>
+            Create a HELO command.
+            </summary>
+            <param name="domainOrAddress">The domain name or address literal.</param>
+            <returns>The HELO command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandFactory.CreateEhlo(System.String)">
+            <summary>
+            Create a EHLO command.
+            </summary>
+            <param name="domainOrAddress">The domain name or address literal.</param>
+            <returns>The EHLO command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandFactory.CreateMail(SmtpServer.Mail.IMailbox,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})">
+            <summary>
+            Create a MAIL command.
+            </summary>
+            <param name="address">The Mailbox address that the message is from.</param>
+            <param name="parameters">The optional parameters for the message.</param>
+            <returns>The MAIL command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandFactory.CreateRcpt(SmtpServer.Mail.IMailbox)">
+            <summary>
+            Create a RCPT command.
+            </summary>
+            <param name="address">The address that the mail is to.</param>
+            <returns>The RCPT command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandFactory.CreateData">
+            <summary>
+            Create a DATA command.
+            </summary>
+            <returns>The DATA command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandFactory.CreateQuit">
+            <summary>
+            Create a QUIT command.
+            </summary>
+            <returns>The QUITcommand.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandFactory.CreateNoop">
+            <summary>
+            Create a NOOP command.
+            </summary>
+            <returns>The NOOP command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandFactory.CreateRset">
+            <summary>
+            Create a RSET command.
+            </summary>
+            <returns>The RSET command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandFactory.CreateStartTls">
+            <summary>
+            Create a STARTTLS command.
+            </summary>
+            <returns>The STARTTLS command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandFactory.CreateAuth(SmtpServer.Protocol.AuthenticationMethod,System.String)">
+            <summary>
+            Create a AUTH command.
+            </summary>
+            <param name="method">The authentication method.</param>
+            <param name="parameter">The authentication parameter.</param>
+            <returns>The AUTH command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandFactory.CreateProxy(System.Net.IPEndPoint,System.Net.IPEndPoint)">
+            <summary>
+            Create a PROXY command.
+            </summary>
+            <param name="sourceEndpoint">The source endpoint.</param>
+            <param name="destinationEndpoint">The destination endpoint.</param>
+            <returns>The PROXY command.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandVisitor.Visit(SmtpServer.Protocol.SmtpCommand)">
+            <summary>
+            Visit the command.
+            </summary>
+            <param name="command"></param>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandVisitor.Visit(SmtpServer.Protocol.AuthCommand)">
+            <summary>
+            Visit an AUTH command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandVisitor.Visit(SmtpServer.Protocol.DataCommand)">
+            <summary>
+            Visit an DATA command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandVisitor.Visit(SmtpServer.Protocol.HeloCommand)">
+            <summary>
+            Visit a HELO command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandVisitor.Visit(SmtpServer.Protocol.EhloCommand)">
+            <summary>
+            Visit an EHLO command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandVisitor.Visit(SmtpServer.Protocol.MailCommand)">
+            <summary>
+            Visit an MAIL command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandVisitor.Visit(SmtpServer.Protocol.NoopCommand)">
+            <summary>
+            Visit an NOOP command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandVisitor.Visit(SmtpServer.Protocol.ProxyCommand)">
+            <summary>
+            Visit an PROXY command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandVisitor.Visit(SmtpServer.Protocol.QuitCommand)">
+            <summary>
+            Visit an QUIT command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandVisitor.Visit(SmtpServer.Protocol.RcptCommand)">
+            <summary>
+            Visit an RCPT command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandVisitor.Visit(SmtpServer.Protocol.RsetCommand)">
+            <summary>
+            Visit an RSET command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpCommandVisitor.Visit(SmtpServer.Protocol.StartTlsCommand)">
+            <summary>
+            Visit an STARTTLS command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMake(System.Buffers.ReadOnlySequence{System.Byte}@,SmtpServer.Protocol.SmtpCommand@,SmtpServer.Protocol.SmtpResponse@)">
+            <summary>
+            Make a command from the buffer.
+            </summary>
+            <param name="buffer">The buffer to read the command from.</param>
+            <param name="command">The command that is defined within the token reader.</param>
+            <param name="errorResponse">The error that indicates why the command could not be made.</param>
+            <returns>Returns true if a command could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeHelo(SmtpServer.Text.TokenReader@,SmtpServer.Protocol.SmtpCommand@,SmtpServer.Protocol.SmtpResponse@)">
+            <summary>
+            Make a HELO command from the given enumerator.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="command">The HELO command that is defined within the token enumerator.</param>
+            <param name="errorResponse">The error that indicates why the command could not be made.</param>
+            <returns>Returns true if a command could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeHeloLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the HELO text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the HELO text sequence  could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeEhlo(SmtpServer.Text.TokenReader@,SmtpServer.Protocol.SmtpCommand@,SmtpServer.Protocol.SmtpResponse@)">
+            <summary>
+            Make an EHLO command from the given reader.
+            </summary>
+            <param name="reader">The token reader to parse the command from.</param>
+            <param name="command">The EHLO command that is defined within the token reader.</param>
+            <param name="errorResponse">The error that indicates why the command could not be made.</param>
+            <returns>Returns true if a command could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeEhloLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the EHLO text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the EHLO text sequence  could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeMail(SmtpServer.Text.TokenReader@,SmtpServer.Protocol.SmtpCommand@,SmtpServer.Protocol.SmtpResponse@)">
+            <summary>
+            Make a MAIL command from the given enumerator.
+            </summary>
+            <param name="reader">The token reader to parse the command from.</param>
+            <param name="command">The MAIL command that is defined within the token enumerator.</param>
+            <param name="errorResponse">The error that indicates why the command could not be made.</param>
+            <returns>Returns true if a command could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeMail(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the MAIL text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the MAIL text sequence could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeFrom(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the FROM text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the FROM text sequence could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeRcpt(SmtpServer.Text.TokenReader@,SmtpServer.Protocol.SmtpCommand@,SmtpServer.Protocol.SmtpResponse@)">
+            <summary>
+            Make a RCTP command from the given reader.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="command">The RCTP command that is defined within the token enumerator.</param>
+            <param name="errorResponse">The error that indicates why the command could not be made.</param>
+            <returns>Returns true if a command could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeRcptLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the RCPT text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the RCPT text sequence could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeToLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the TO text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the TO text sequence could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeData(SmtpServer.Text.TokenReader@,SmtpServer.Protocol.SmtpCommand@,SmtpServer.Protocol.SmtpResponse@)">
+            <summary>
+            Make a DATA command from the given enumerator.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="command">The DATA command that is defined within the token enumerator.</param>
+            <param name="errorResponse">The error that indicates why the command could not be made.</param>
+            <returns>Returns true if a command could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeDataLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the DATA text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the DATA text sequence could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeQuit(SmtpServer.Text.TokenReader@,SmtpServer.Protocol.SmtpCommand@,SmtpServer.Protocol.SmtpResponse@)">
+            <summary>
+            Make a QUIT command.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="command">The QUIT command that is defined within the token enumerator.</param>
+            <param name="errorResponse">The error that indicates why the command could not be made.</param>
+            <returns>Returns true if a command could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeQuitLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the QUIT text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the QUIT text sequence could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeNoop(SmtpServer.Text.TokenReader@,SmtpServer.Protocol.SmtpCommand@,SmtpServer.Protocol.SmtpResponse@)">
+            <summary>
+            Make a NOOP command.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="command">The NOOP command that is defined within the token enumerator.</param>
+            <param name="errorResponse">The error that indicates why the command could not be made.</param>
+            <returns>Returns true if a command could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeNoopLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the NOOP text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the NOOP text sequence could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeRset(SmtpServer.Text.TokenReader@,SmtpServer.Protocol.SmtpCommand@,SmtpServer.Protocol.SmtpResponse@)">
+            <summary>
+            Make a RSET command.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="command">The RSET command that is defined within the token enumerator.</param>
+            <param name="errorResponse">The error that indicates why the command could not be made.</param>
+            <returns>Returns true if a command could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeRsetLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the RSET text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the RSET text sequence could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeStartTls(SmtpServer.Text.TokenReader@,SmtpServer.Protocol.SmtpCommand@,SmtpServer.Protocol.SmtpResponse@)">
+            <summary>
+            Make an STARTTLS command from the given enumerator.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="command">The STARTTLS command that is defined within the token enumerator.</param>
+            <param name="errorResponse">The error that indicates why the command could not be made.</param>
+            <returns>Returns true if a command could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeStartTlsLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the STARTTLS text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the STARTTLS text sequence could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeAuth(SmtpServer.Text.TokenReader@,SmtpServer.Protocol.SmtpCommand@,SmtpServer.Protocol.SmtpResponse@)">
+            <summary>
+            Make an AUTH command from the given enumerator.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="command">The AUTH command that is defined within the token enumerator.</param>
+            <param name="errorResponse">The error that indicates why the command could not be made.</param>
+            <returns>Returns true if a command could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeAuthenticationMethod(SmtpServer.Text.TokenReader@,SmtpServer.Protocol.AuthenticationMethod@)">
+            <summary>
+            Try to make the Authentication method.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="authenticationMethod">The authentication method that was made.</param>
+            <returns>true if the authentication method could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeAuthLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the AUTH text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the AUTH text sequence could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeLoginLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the LOGIN text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the LOGIN text sequence could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakePlainLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the PLAIN text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the PLAIN text sequence could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeProxy(SmtpServer.Text.TokenReader@,SmtpServer.Protocol.SmtpCommand@,SmtpServer.Protocol.SmtpResponse@)">
+            <summary>
+            Support proxy protocol version 1 header for use with HAProxy.
+            Documented at http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="command">The PROXY command that is defined within the token enumerator.</param>
+            <param name="errorResponse">The error that indicates why the command could not be made.</param>
+            <returns>Returns true if a command could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeProxyLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the PROXY text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the PROXY text sequence could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeUnknownLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Attempt to make the Unknown Proxy command.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the command was made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeTcp4Proxy(SmtpServer.Text.TokenReader@,SmtpServer.Protocol.SmtpCommand@)">
+            <summary>
+            Attempt to make a TCP4 Proxy command.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="command">The command that was made.</param>
+            <returns>true if the command was made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeTcp6Proxy(SmtpServer.Text.TokenReader@,SmtpServer.Protocol.SmtpCommand@)">
+            <summary>
+            Attempt to make a TCP6 Proxy command.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="command">The command that was made.</param>
+            <returns>true if the command was made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeProxyAddresses(SmtpServer.Text.TokenReader@,SmtpServer.Text.TokenReader.TryMakeDelegate,SmtpServer.Protocol.SmtpCommand@)">
+            <summary>
+            Attempt to make the proxy address sequences.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="tryMakeDelegate">The delegate to match the address.</param>
+            <param name="command">The command that was made.</param>
+            <returns>true if the command was made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeTcpLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the Tcp text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the TCP text sequence could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeEnd(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the end of sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the end was made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeReversePath(SmtpServer.Text.TokenReader@,SmtpServer.Mail.IMailbox@)">
+            <summary>
+            Try to make a reverse path.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="mailbox">The mailbox that was made.</param>
+            <returns>true if the reverse path was made, false if not.</returns>
+            <remarks><![CDATA[Path / "<>"]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeEmptyPath(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make an empty path.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the empty path was made, false if not.</returns>
+            <remarks><![CDATA["<>"]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakePath(SmtpServer.Text.TokenReader@,SmtpServer.Mail.IMailbox@)">
+            <summary>
+            Try to make a path.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="mailbox">The mailbox that was made.</param>
+            <returns>true if the path was made, false if not.</returns>
+            <remarks><![CDATA["<" [ A-d-l ":" ] Mailbox ">"]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeAtDomainList(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make an @domain list.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the @domain list was made, false if not.</returns>
+            <remarks><![CDATA[At-domain *( "," At-domain )]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeAtDomain(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make an @domain.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the @domain was made, false if not.</returns>
+            <remarks><![CDATA["@" Domain]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeMailbox(SmtpServer.Text.TokenReader@,SmtpServer.Mail.IMailbox@)">
+            <summary>
+            Try to make a mailbox.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="mailbox">The mailbox that was made.</param>
+            <returns>true if the mailbox was made, false if not.</returns>
+            <remarks><![CDATA[Local-part "@" ( Domain / address-literal )]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeDomain(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make a domain name.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the domain name was made, false if not.</returns>
+            <remarks><![CDATA[sub-domain *("." sub-domain)]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeSubdomain(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make a subdomain name.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the subdomain name was made, false if not.</returns>
+            <remarks><![CDATA[Let-dig [Ldh-str]]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeAddressLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make a address.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the address was made, false if not.</returns>
+            <remarks><![CDATA["[" ( IPv4-address-literal / IPv6-address-literal / General-address-literal ) "]"]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeIPv4AddressLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make an IPv4 address literal.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the address was made, false if not.</returns>
+            <remarks><![CDATA[ Snum 3("."  Snum) ]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeSnum(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make an Snum (number in the range of 0-255).
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the snum was made, false if not.</returns>
+            <remarks><![CDATA[ 1*3DIGIT ]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeWnum(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make a Wnum (number in the range of 0-65535).
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the snum was made, false if not.</returns>
+            <remarks><![CDATA[ 1*5DIGIT ]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeIPv6AddressLiteral(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to extract IPv6 address. https://tools.ietf.org/html/rfc4291 section 2.2 used for specification.
+            This method expects the address to have the IPv6: prefix.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if a valid Ipv6 address can be extracted.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeIPv6(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make Ip version from ip version tag which is a formatted text IPv[Version]:
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if ip version tag can be extracted.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeIPv(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the IPv text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if IPv text sequence can be made.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeIPv6Address(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make an IPv6 address.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the address was made, false if not.</returns>
+            <remarks><![CDATA[  ]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMake16BitHex(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make 16 bit hex number.
+            </summary>
+            <param name="reader">The token reader to perform the operation on.</param>
+            <returns>true if valid hex number can be extracted.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeTextOrNumberOrHyphenString(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make a text/number/hyphen string.
+            </summary>
+            <param name="reader">The reader to perform the operatio on.</param>
+            <returns>true if a text, number or hyphen was made, false if not.</returns>
+            <remarks><![CDATA[*( ALPHA / DIGIT / "-" ) Let-dig]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeTextOrNumber(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make a text or number
+            </summary>
+            <param name="reader">The reader to perform the operatio on.</param>
+            <returns>true if the text or number was made, false if not.</returns>
+            <remarks><![CDATA[ALPHA / DIGIT]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeLocalPart(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the local part of the path.
+            </summary>
+            <param name="reader">The reader to perform the operatio on.</param>
+            <returns>true if the local part was made, false if not.</returns>
+            <remarks><![CDATA[Dot-string / Quoted-string]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeDotString(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make a dot-string from the tokens.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the dot-string was made, false if not.</returns>
+            <remarks><![CDATA[Atom *("."  Atom)]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeQuotedString(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make a quoted-string from the tokens.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the quoted-string was made, false if not.</returns>
+            <remarks><![CDATA[DQUOTE * QcontentSMTP DQUOTE]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeQContentSmtp(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make a QcontentSMTP from the tokens.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the quoted content was made, false if not.</returns>
+            <remarks><![CDATA[qtextSMTP / quoted-pairSMTP]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeQTextSmtp(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make a QTextSMTP from the tokens.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the quoted text was made, false if not.</returns>
+            <remarks><![CDATA[%d32-33 / %d35-91 / %d93-126]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeQuotedPairSmtp(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make a quoted pair from the tokens.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the quoted pair was made, false if not.</returns>
+            <remarks><![CDATA[%d92 %d32-126]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeAtom(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make an "Atom" from the tokens.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the atom was made, false if not.</returns>
+            <remarks><![CDATA[1*atext]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeAtext(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make an "Atext" from the tokens.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the atext was made, false if not.</returns>
+            <remarks><![CDATA[atext]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeMailParameters(SmtpServer.Text.TokenReader@,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}@)">
+            <summary>
+            Try to make an Mail-Parameters from the tokens.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="parameters">The mail parameters that were made.</param>
+            <returns>true if the mail parameters can be made, false if not.</returns>
+            <remarks><![CDATA[esmtp-param *(SP esmtp-param)]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeEsmtpParameter(SmtpServer.Text.TokenReader@,System.Buffers.ReadOnlySequence{System.Byte}@,System.Buffers.ReadOnlySequence{System.Byte}@)">
+            <summary>
+            Try to make an Esmtp-Parameter from the tokens.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <param name="keyword">The keyword that was made.</param>
+            <param name="value">The value that was made.</param>
+            <returns>true if the esmtp-parameter can be made, false if not.</returns>
+            <remarks><![CDATA[esmtp-keyword ["=" esmtp-value]]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeEsmtpKeyword(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make an Esmtp-Keyword from the tokens.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the esmtp-keyword can be made, false if not.</returns>
+            <remarks><![CDATA[(ALPHA / DIGIT) *(ALPHA / DIGIT / "-")]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeEsmtpValue(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make an Esmtp-Value from the tokens.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the esmtp-value can be made, false if not.</returns>
+            <remarks><![CDATA[1*(%d33-60 / %d62-127)]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeBase64(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make a base64 encoded string.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the base64 encoded string can be made, false if not.</returns>
+            <remarks><![CDATA[ALPHA / DIGIT / "+" / "/"]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeBase64Text(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make a base64 encoded string.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the base64 encoded string can be made, false if not.</returns>
+            <remarks><![CDATA[ALPHA / DIGIT / "+" / "/"]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeBase64Chars(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make the allowable characters in a base64 encoded string.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if the base64-chars can be made, false if not.</returns>
+            <remarks><![CDATA[ALPHA / DIGIT / "+" / "/"]]></remarks>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeText(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make a text sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if a text sequence could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpParser.TryMakeNumber(SmtpServer.Text.TokenReader@)">
+            <summary>
+            Try to make a number sequence.
+            </summary>
+            <param name="reader">The reader to perform the operation on.</param>
+            <returns>true if a number sequence could be made, false if not.</returns>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.UnableToConnect">
+            <summary>
+            The server is unable to connect.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.ConnectionRefused">
+            <summary>
+            Connection refused or inability to open an SMTP stream.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.SystemMessage">
+            <summary>
+            System status message or help reply.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.HelpResponse">
+            <summary>
+            A response to the HELP command.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.ServiceReady">
+            <summary>
+            The service is ready.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.ServiceClosingTransmissionChannel">
+            <summary>
+            Goodbye.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.AuthenticationSuccessful">
+            <summary>
+            Authentication was Successful.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.Ok">
+            <summary>
+            Everything was Ok.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.RelayToAnotherServer">
+            <summary>
+            "User not local will forward": the recipient’s account is not on the present server, so it will be relayed to another.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.CantVerifyUser">
+            <summary>
+            The server cannot verify the user, but it will try to deliver the message anyway.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.ContinueWithAuth">
+            <summary>
+            Continue with the authentication.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.StartMailInput">
+            <summary>
+            Start the mail input.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.TimeoutConnectionProblem">
+            <summary>
+            "Timeout connection problem": there have been issues during the message transfer.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.ServiceUnavailable">
+            <summary>
+            The service is unavailable due to a connection problem: it may refer to an exceeded limit of simultaneous connections, or a more general temporary problem.
+            The server (yours or the recipient's) is not available at the moment, so the dispatch will be tried again later.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.ExceededStorage">
+            <summary>
+            The recipient’s mailbox has exceeded its storage limit.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.Overloaded">
+            <summary>
+            Not enough space on the disk, or an "out of memory" condition due to a file overload.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.RecipientNotResponding">
+            <summary>
+            The recipient’s server is not responding.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.ConnectionDropped">
+            <summary>
+            The connection was dropped during the transmission.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.MaxHopCountExceeded">
+            <summary>
+            The maximum hop count was exceeded for the message: an internal loop has occurred.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.MessageTimeout">
+            <summary>
+            Your outgoing message timed out because of issues concerning the incoming server.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.RoutingError">
+            <summary>
+            A routing error.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.Unavailable">
+            <summary>
+            "Requested action not taken – The user’s mailbox is unavailable". The mailbox has been corrupted or placed on an offline server, or your email hasn't been accepted for IP problems or blacklisting.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.Aborted">
+            <summary>
+            "Requested action aborted – Local error in processing". Your ISP's server or the server that got a first relay from yours has encountered a connection problem.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.InsufficientStorage">
+            <summary>
+            There is insufficent stored to handle the mail.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.ClientNotPermitted">
+            <summary>
+            The client is not permitted to connect.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.Error">
+            <summary>
+            An error of your mail server, often due to an issue of the local anti-spam filter.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.CommandUnrecognized">
+            <summary>
+            Syntax error, command unrecognized (This may include errors such as command line too long).
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.SyntaxError">
+            <summary>
+            Syntax error in parameters or arguments.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.CommandNotImplemented">
+            <summary>
+            The command has not been implemented.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.BadSequence">
+            <summary>
+            Bad sequence of commands.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.CommandParameterNotImplemented">
+            <summary>
+            A command parameter is not implemented.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.BadEmailAddress">
+            <summary>
+            Bad email address.
+            Codes 510 or 511 result the same structure.
+            One of the addresses in your TO, CC or BBC line doesn't exist. Check again your recipients' accounts and correct any possible misspelling.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.DnsError">
+            <summary>
+            A DNS error: the host server for the recipient's domain name cannot be found.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.IncorrectAddressType">
+            <summary>
+            "Address type is incorrect": another problem concerning address misspelling. In few cases, however, it's related to an authentication issue.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.MailingLimitExceeded">
+            <summary>
+            The total size of your mailing exceeds the recipient server's limits.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.AuthenticationRequired">
+            <summary>
+            Authentication required
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.AuthenticationFailed">
+            <summary>
+            Authentication failed.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.RecipientAddressRejected">
+            <summary>
+            The recipient address rejected your message: normally, it's an error caused by an anti-spam filter.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.MailboxUnavailable">
+            <summary>
+            The Mailbox is temporarily unavailable.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.RelayDenied">
+            <summary>
+            "User not local or invalid address – Relay denied". Meaning, if both your address and the recipients are not locally hosted by the server, a relay can be interrupted.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.SizeLimitExceeded">
+            <summary>
+            The size limit has been exceeded.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.MailboxNameNotAllowed">
+            <summary>
+            The Mailbox is permanently not available.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Protocol.SmtpReplyCode.TransactionFailed">
+            <summary>
+            The transaction failed.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpResponse.#ctor(SmtpServer.Protocol.SmtpReplyCode,System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="replyCode">The reply code.</param>
+            <param name="message">The reply message.</param>
+        </member>
+        <member name="P:SmtpServer.Protocol.SmtpResponse.ReplyCode">
+            <summary>
+            Gets the Reply Code.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.Protocol.SmtpResponse.Message">
+            <summary>
+            Gets the response message.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpResponseException.#ctor(SmtpServer.Protocol.SmtpResponse)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="response">The response to raise in the exception.</param>
+        </member>
+        <member name="M:SmtpServer.Protocol.SmtpResponseException.#ctor(SmtpServer.Protocol.SmtpResponse,System.Boolean)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="response">The response to raise in the exception.</param>
+            <param name="quit">Indicates whether or not the session should terminate.</param>
+        </member>
+        <member name="P:SmtpServer.Protocol.SmtpResponseException.Response">
+            <summary>
+            The response to return to the client.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.Protocol.SmtpResponseException.IsQuitRequested">
+            <summary>
+            Indicates whether or not the session should terminate.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.StartTlsCommand.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Protocol.StartTlsCommand.ExecuteAsync(SmtpServer.SmtpSessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Execute the command.
+            </summary>
+            <param name="context">The execution context to operate on.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>Returns true if the command executed successfully such that the transition to the next state should occurr, false 
+            if the current state is to be maintained.</returns>
+        </member>
+        <member name="M:SmtpServer.SessionEventArgs.#ctor(SmtpServer.ISessionContext)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="context">The session context.</param>
+        </member>
+        <member name="P:SmtpServer.SessionEventArgs.Context">
+            <summary>
+            Returns the session context.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.SessionFaultedEventArgs.#ctor(SmtpServer.ISessionContext,System.Exception)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="exception">The exception that occured</param>
+        </member>
+        <member name="P:SmtpServer.SessionFaultedEventArgs.Exception">
+            <summary>
+            Returns the exception.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.SmtpCommandEventArgs.#ctor(SmtpServer.ISessionContext,SmtpServer.Protocol.SmtpCommand)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="command">The command for the event.</param>
+        </member>
+        <member name="P:SmtpServer.SmtpCommandEventArgs.Command">
+            <summary>
+            The command for the event.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.SmtpMessageTransaction.Reset">
+            <summary>
+            Reset the current transaction.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpMessageTransaction.From">
+            <summary>
+            Gets or sets the mailbox that is sending the message.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpMessageTransaction.To">
+            <summary>
+            Gets or sets the collection of mailboxes that the message is to be delivered to.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpMessageTransaction.Parameters">
+            <summary>
+            The list of parameters that were supplied by the client.
+            </summary>
+        </member>
+        <member name="E:SmtpServer.SmtpServer.SessionCreated">
+            <summary>
+            Raised when a session has been created.
+            </summary>
+        </member>
+        <member name="E:SmtpServer.SmtpServer.SessionCompleted">
+            <summary>
+            Raised when a session has completed.
+            </summary>
+        </member>
+        <member name="E:SmtpServer.SmtpServer.SessionFaulted">
+            <summary>
+            Raised when a session has faulted.
+            </summary>
+        </member>
+        <member name="E:SmtpServer.SmtpServer.SessionCancelled">
+            <summary>
+            Raised when a session has been cancelled through the cancellation token.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.SmtpServer.#ctor(SmtpServer.ISmtpServerOptions,System.IServiceProvider)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="options">The SMTP server options.</param>
+            <param name="serviceProvider">The service provider to use when resolving services.</param>
+        </member>
+        <member name="M:SmtpServer.SmtpServer.OnSessionCreated(SmtpServer.SessionEventArgs)">
+            <summary>
+            Raises the SessionCreated Event.
+            </summary>
+            <param name="args">The event data.</param>
+        </member>
+        <member name="M:SmtpServer.SmtpServer.OnSessionCompleted(SmtpServer.SessionEventArgs)">
+            <summary>
+            Raises the SessionCompleted Event.
+            </summary>
+            <param name="args">The event data.</param>
+        </member>
+        <member name="M:SmtpServer.SmtpServer.OnSessionFaulted(SmtpServer.SessionFaultedEventArgs)">
+            <summary>
+            Raises the SessionCompleted Event.
+            </summary>
+            <param name="args">The event data.</param>
+        </member>
+        <member name="M:SmtpServer.SmtpServer.OnSessionCancelled(SmtpServer.SessionEventArgs)">
+            <summary>
+            Raises the SessionCancelled Event.
+            </summary>
+            <param name="args">The event data.</param>
+        </member>
+        <member name="M:SmtpServer.SmtpServer.StartAsync(System.Threading.CancellationToken)">
+            <summary>
+            Starts the SMTP server.
+            </summary>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>A task which performs the operation.</returns>
+        </member>
+        <member name="M:SmtpServer.SmtpServer.Shutdown">
+            <summary>
+            Shutdown the server and allow any active sessions to finish.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.SmtpServer.ListenAsync(SmtpServer.IEndpointDefinition,System.Threading.CancellationToken)">
+            <summary>
+            Listen for SMTP traffic on the given endpoint.
+            </summary>
+            <param name="endpointDefinition">The definition of the endpoint to listen on.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>A task which performs the operation.</returns>
+        </member>
+        <member name="P:SmtpServer.SmtpServer.ShutdownTask">
+            <summary>
+            The task that completes when the server has shutdown and stopped accepting new sessions.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.SmtpServerOptionsBuilder.Build">
+            <summary>
+            Builds the options that have been set and returns the built instance.
+            </summary>
+            <returns>The server options that have been set.</returns>
+        </member>
+        <member name="M:SmtpServer.SmtpServerOptionsBuilder.ServerName(System.String)">
+            <summary>
+            Sets the server name.
+            </summary>
+            <param name="value">The name of the server.</param>
+            <returns>A OptionsBuilder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.SmtpServerOptionsBuilder.Endpoint(SmtpServer.IEndpointDefinition)">
+            <summary>
+            Adds a definition for an endpoint to listen on.
+            </summary>
+            <param name="value">The endpoint to listen on.</param>
+            <returns>A OptionsBuilder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.SmtpServerOptionsBuilder.Endpoint(System.Action{SmtpServer.EndpointDefinitionBuilder})">
+            <summary>
+            Adds a definition for an endpoint to listen on.
+            </summary>
+            <param name="configure">The endpoint to listen on.</param>
+            <returns>A OptionsBuilder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.SmtpServerOptionsBuilder.Port(System.Int32[])">
+            <summary>
+            Adds an endpoint with the given port.
+            </summary>
+            <param name="ports">The port to add as the endpoint.</param>
+            <returns>A OptionsBuilder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.SmtpServerOptionsBuilder.Port(System.Int32,System.Boolean)">
+            <summary>
+            Adds an endpoint with the given port.
+            </summary>
+            <param name="port">The port to add as the endpoint.</param>
+            <param name="isSecure">Indicates whether the port is secure by default.</param>
+            <returns>A OptionsBuilder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.SmtpServerOptionsBuilder.MaxMessageSize(System.Int32)">
+            <summary>
+            Sets the maximum message size.
+            </summary>
+            <param name="value">The maximum message size to allow.</param>
+            <returns>A OptionsBuilder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.SmtpServerOptionsBuilder.MaxRetryCount(System.Int32)">
+            <summary>
+            Sets the maximum number of retries for a failed command.
+            </summary>
+            <param name="value">The maximum number of retries allowed for a failed command.</param>
+            <returns>A OptionsBuilder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.SmtpServerOptionsBuilder.MaxAuthenticationAttempts(System.Int32)">
+            <summary>
+            Sets the maximum number of authentication attempts.
+            </summary>
+            <param name="value">The maximum number of authentication attempts for a failed authentication.</param>
+            <returns>A OptionsBuilder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.SmtpServerOptionsBuilder.NetworkBufferSize(System.Int32)">
+            <summary>
+            Sets the size of the buffer for each read operation.
+            </summary>
+            <param name="value">The buffer size for each read operation.</param>
+            <returns>An OptionsBuilder to continue building on.</returns>
+        </member>
+        <member name="M:SmtpServer.SmtpServerOptionsBuilder.CommandWaitTimeout(System.TimeSpan)">
+            <summary>
+            Sets the timeout to use whilst waiting for a command from the client.
+            </summary>
+            <param name="value">The timeout to use whilst waiting for a command from the client.</param>
+            <returns>An OptionsBuilder to continue building on.</returns>
+        </member>
+        <member name="P:SmtpServer.SmtpServerOptionsBuilder.SmtpServerOptions.MaxMessageSize">
+            <summary>
+            Gets or sets the maximum size of a message.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpServerOptionsBuilder.SmtpServerOptions.MaxRetryCount">
+            <summary>
+            The maximum number of retries before quitting the session.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpServerOptionsBuilder.SmtpServerOptions.MaxAuthenticationAttempts">
+            <summary>
+            The maximum number of authentication attempts.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpServerOptionsBuilder.SmtpServerOptions.ServerName">
+            <summary>
+            Gets or sets the SMTP server name.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpServerOptionsBuilder.SmtpServerOptions.Endpoints">
+            <summary>
+            Gets or sets the endpoint to listen on.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpServerOptionsBuilder.SmtpServerOptions.SmtpServer#ISmtpServerOptions#Endpoints">
+            <summary>
+            Gets or sets the endpoint to listen on.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpServerOptionsBuilder.SmtpServerOptions.CommandWaitTimeout">
+            <summary>
+            The timeout to use when waiting for a command from the client.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpServerOptionsBuilder.SmtpServerOptions.NetworkBufferSize">
+            <summary>
+            The size of the buffer that is read from each call to the underlying network client.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.SmtpSession.#ctor(SmtpServer.SmtpSessionContext)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="context">The session context.</param>
+        </member>
+        <member name="M:SmtpServer.SmtpSession.RunAsync(System.Threading.CancellationToken)">
+            <summary>
+            Handles the SMTP session.
+            </summary>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>A task which performs the operation.</returns>
+        </member>
+        <member name="M:SmtpServer.SmtpSession.ExecuteAsync(SmtpServer.SmtpSessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Execute the command handler against the specified session context.
+            </summary>
+            <param name="context">The session context to execute the command handler against.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>A task which asynchronously performs the execution.</returns>
+        </member>
+        <member name="M:SmtpServer.SmtpSession.CreateErrorResponse(SmtpServer.Protocol.SmtpResponse,System.Int32)">
+            <summary>
+            Create an error response.
+            </summary>
+            <param name="response">The original response to wrap with the error message information.</param>
+            <param name="retries">The number of retries remaining before the session is terminated.</param>
+            <returns>The response that wraps the original response with the additional error information.</returns>
+        </member>
+        <member name="M:SmtpServer.SmtpSession.ExecuteAsync(SmtpServer.Protocol.SmtpCommand,SmtpServer.SmtpSessionContext,System.Threading.CancellationToken)">
+            <summary>
+            Execute the command.
+            </summary>
+            <param name="command">The command to execute.</param>
+            <param name="context">The execution context to operate on.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>A task which asynchronously performs the execution.</returns>
+        </member>
+        <member name="M:SmtpServer.SmtpSession.OutputGreetingAsync(System.Threading.CancellationToken)">
+            <summary>
+            Output the greeting.
+            </summary>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>A task which performs the operation.</returns>
+        </member>
+        <member name="E:SmtpServer.SmtpSessionContext.CommandExecuting">
+            <summary>
+            Fired when a command is about to execute.
+            </summary>
+        </member>
+        <member name="E:SmtpServer.SmtpSessionContext.CommandExecuted">
+            <summary>
+            Fired when a command has finished executing.
+            </summary>
+        </member>
+        <member name="E:SmtpServer.SmtpSessionContext.SessionAuthenticated">
+            <summary>
+            Fired when the session has been authenticated.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.SmtpSessionContext.#ctor(System.IServiceProvider,SmtpServer.ISmtpServerOptions,SmtpServer.IEndpointDefinition)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="serviceProvider">The service provider instance.</param>
+            <param name="options">The server options.</param>
+            <param name="endpointDefinition">The endpoint definition.</param>
+        </member>
+        <member name="M:SmtpServer.SmtpSessionContext.RaiseCommandExecuting(SmtpServer.Protocol.SmtpCommand)">
+            <summary>
+            Raise the command executing event.
+            </summary>
+            <param name="command">The command that is executing.</param>
+        </member>
+        <member name="M:SmtpServer.SmtpSessionContext.RaiseCommandExecuted(SmtpServer.Protocol.SmtpCommand)">
+            <summary>
+            Raise the command executed event.
+            </summary>
+            <param name="command">The command that was executed.</param>
+        </member>
+        <member name="M:SmtpServer.SmtpSessionContext.RaiseSessionAuthenticated">
+            <summary>
+            Raise the session authenticated event.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpSessionContext.ServiceProvider">
+            <summary>
+            The service provider instance. 
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpSessionContext.ServerOptions">
+            <summary>
+            Gets the options that the server was created with.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpSessionContext.EndpointDefinition">
+            <summary>
+            Gets the endpoint definition.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpSessionContext.Pipe">
+            <summary>
+            Gets the pipeline to read from and write to.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpSessionContext.Transaction">
+            <summary>
+            Gets the current transaction.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpSessionContext.Authentication">
+            <summary>
+            Returns the authentication context.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpSessionContext.AuthenticationAttempts">
+            <summary>
+            Returns the number of athentication attempts.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpSessionContext.IsQuitRequested">
+            <summary>
+            Gets a value indicating whether a quit has been requested.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.SmtpSessionContext.Properties">
+            <summary>
+            Returns a set of propeties for the current session.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.StateMachine.SmtpStateMachine.#ctor(SmtpServer.SmtpSessionContext)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="context">The SMTP server session context.</param>
+        </member>
+        <member name="M:SmtpServer.StateMachine.SmtpStateMachine.TryAccept(SmtpServer.Protocol.SmtpCommand,SmtpServer.Protocol.SmtpResponse@)">
+            <summary>
+            Try to accept the command given the current state.
+            </summary>
+            <param name="command">The command to accept.</param>
+            <param name="errorResponse">The error response to display if the command was not accepted.</param>
+            <returns>true if the command could be accepted, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.StateMachine.SmtpStateMachine.Transition(SmtpServer.SmtpSessionContext)">
+            <summary>
+            Accept the state and transition to the new state.
+            </summary>
+            <param name="context">The session context to use for accepting session based transitions.</param>
+        </member>
+        <member name="M:SmtpServer.StateMachine.SmtpStateTable.Add(SmtpServer.StateMachine.SmtpState)">
+            <summary>
+            Add the state to the table.
+            </summary>
+            <param name="state"></param>
+        </member>
+        <member name="M:SmtpServer.StateMachine.SmtpStateTable.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>An <see cref="T:System.Collections.IEnumerator"></see> object that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="M:SmtpServer.Storage.CompositeMailboxFilter.#ctor(SmtpServer.Storage.IMailboxFilter[])">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="filters">The list of filters to run in order.</param>
+        </member>
+        <member name="M:SmtpServer.Storage.CompositeMailboxFilter.CanAcceptFromAsync(SmtpServer.ISessionContext,SmtpServer.Mail.IMailbox,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Returns a value indicating whether the given mailbox can be accepted as a sender.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="from">The mailbox to test.</param>
+            <param name="size">The estimated message size to accept.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The acceptance state of the mailbox.</returns>
+        </member>
+        <member name="M:SmtpServer.Storage.CompositeMailboxFilter.CanDeliverToAsync(SmtpServer.ISessionContext,SmtpServer.Mail.IMailbox,SmtpServer.Mail.IMailbox,System.Threading.CancellationToken)">
+            <summary>
+            Returns a value indicating whether the given mailbox can be accepted as a recipient to the given sender.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="to">The mailbox to test.</param>
+            <param name="from">The sender's mailbox.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The acceptance state of the mailbox.</returns>
+        </member>
+        <member name="M:SmtpServer.Storage.CompositeMailboxFilterFactory.#ctor(SmtpServer.Storage.IMailboxFilterFactory[])">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="factories">The list of factories to run in order.</param>
+        </member>
+        <member name="M:SmtpServer.Storage.CompositeMailboxFilterFactory.CreateInstance(SmtpServer.ISessionContext)">
+            <summary>
+            Creates an instance of the message box filter.
+            </summary>
+            <param name="context">The session context.</param>
+            <returns>The mailbox filter for the session.</returns>
+        </member>
+        <member name="M:SmtpServer.Storage.DelegatingMailboxFilter.#ctor(System.Func{SmtpServer.Mail.IMailbox,SmtpServer.Storage.MailboxFilterResult})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="canAcceptDelegate">The delegate to accept a mailbox.</param>
+        </member>
+        <member name="M:SmtpServer.Storage.DelegatingMailboxFilter.#ctor(System.Func{SmtpServer.ISessionContext,SmtpServer.Mail.IMailbox,SmtpServer.Storage.MailboxFilterResult})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="canAcceptDelegate">The delegate to accept a mailbox.</param>
+        </member>
+        <member name="M:SmtpServer.Storage.DelegatingMailboxFilter.#ctor(System.Func{SmtpServer.Mail.IMailbox,SmtpServer.Mail.IMailbox,SmtpServer.Storage.MailboxFilterResult})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="canDeliverDelegate">The delegate to deliver to a mailbox.</param>
+        </member>
+        <member name="M:SmtpServer.Storage.DelegatingMailboxFilter.#ctor(System.Func{SmtpServer.ISessionContext,SmtpServer.Mail.IMailbox,SmtpServer.Mail.IMailbox,SmtpServer.Storage.MailboxFilterResult})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="canDeliverDelegate">The delegate to deliver to a mailbox.</param>
+        </member>
+        <member name="M:SmtpServer.Storage.DelegatingMailboxFilter.#ctor(System.Func{SmtpServer.ISessionContext,SmtpServer.Mail.IMailbox,SmtpServer.Storage.MailboxFilterResult},System.Func{SmtpServer.ISessionContext,SmtpServer.Mail.IMailbox,SmtpServer.Mail.IMailbox,SmtpServer.Storage.MailboxFilterResult})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="canAcceptDelegate">The delegate to accept a mailbox.</param>
+            <param name="canDeliverDelegate">The delegate to deliver to a mailbox.</param>
+        </member>
+        <member name="M:SmtpServer.Storage.DelegatingMailboxFilter.Wrap(System.Func{SmtpServer.Mail.IMailbox,SmtpServer.Storage.MailboxFilterResult})">
+            <summary>
+            Wrap the delegate into a function that is compatible with the signature.
+            </summary>
+            <param name="delegate">The delegate to wrap.</param>
+            <returns>The function that is compatible with the main signature.</returns>
+        </member>
+        <member name="M:SmtpServer.Storage.DelegatingMailboxFilter.Wrap(System.Func{SmtpServer.Mail.IMailbox,SmtpServer.Mail.IMailbox,SmtpServer.Storage.MailboxFilterResult})">
+            <summary>
+            Wrap the delegate into a function that is compatible with the signature.
+            </summary>
+            <param name="delegate">The delegate to wrap.</param>
+            <returns>The function that is compatible with the main signature.</returns>
+        </member>
+        <member name="M:SmtpServer.Storage.DelegatingMailboxFilter.CanAcceptFromAsync(SmtpServer.ISessionContext,SmtpServer.Mail.IMailbox,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Returns a value indicating whether the given mailbox can be accepted as a sender.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="from">The mailbox to test.</param>
+            <param name="size">The estimated message size to accept.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The acceptance state of the mailbox.</returns>
+        </member>
+        <member name="M:SmtpServer.Storage.DelegatingMailboxFilter.CanDeliverToAsync(SmtpServer.ISessionContext,SmtpServer.Mail.IMailbox,SmtpServer.Mail.IMailbox,System.Threading.CancellationToken)">
+            <summary>
+            Returns a value indicating whether the given mailbox can be accepted as a recipient to the given sender.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="to">The mailbox to test.</param>
+            <param name="from">The sender's mailbox.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The acceptance state of the mailbox.</returns>
+        </member>
+        <member name="M:SmtpServer.Storage.DelegatingMailboxFilterFactory.CreateInstance(SmtpServer.ISessionContext)">
+            <summary>
+            Creates an instance of the service for the given session context.
+            </summary>
+            <param name="context">The session context.</param>
+            <returns>The service instance for the session context.</returns>
+        </member>
+        <member name="M:SmtpServer.Storage.DelegatingMessageStoreFactory.CreateInstance(SmtpServer.ISessionContext)">
+            <summary>
+            Creates an instance of the service for the given session context.
+            </summary>
+            <param name="context">The session context.</param>
+            <returns>The service instance for the session context.</returns>
+        </member>
+        <member name="M:SmtpServer.Storage.IMailboxFilter.CanAcceptFromAsync(SmtpServer.ISessionContext,SmtpServer.Mail.IMailbox,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Returns a value indicating whether the given mailbox can be accepted as a sender.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="from">The mailbox to test.</param>
+            <param name="size">The estimated message size to accept.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The acceptance state of the mailbox.</returns>
+        </member>
+        <member name="M:SmtpServer.Storage.IMailboxFilter.CanDeliverToAsync(SmtpServer.ISessionContext,SmtpServer.Mail.IMailbox,SmtpServer.Mail.IMailbox,System.Threading.CancellationToken)">
+            <summary>
+            Returns a value indicating whether the given mailbox can be accepted as a recipient to the given sender.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="to">The mailbox to test.</param>
+            <param name="from">The sender's mailbox.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The acceptance state of the mailbox.</returns>
+        </member>
+        <member name="M:SmtpServer.Storage.IMessageStore.SaveAsync(SmtpServer.ISessionContext,SmtpServer.IMessageTransaction,System.Buffers.ReadOnlySequence{System.Byte},System.Threading.CancellationToken)">
+            <summary>
+            Save the given message to the underlying storage system.
+            </summary>
+            <param name="context">The session level context.</param>
+            <param name="transaction">The SMTP message transaction to store.</param>
+            <param name="buffer">The buffer that contains the message content.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The response code to return that indicates the result of the message being saved.</returns>
+        </member>
+        <member name="M:SmtpServer.Storage.MailboxFilter.CanAcceptFromAsync(SmtpServer.ISessionContext,SmtpServer.Mail.IMailbox,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Returns a value indicating whether the given mailbox can be accepted as a sender.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="from">The mailbox to test.</param>
+            <param name="size">The estimated message size to accept.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The acceptance state of the mailbox.</returns>
+        </member>
+        <member name="M:SmtpServer.Storage.MailboxFilter.CanDeliverToAsync(SmtpServer.ISessionContext,SmtpServer.Mail.IMailbox,SmtpServer.Mail.IMailbox,System.Threading.CancellationToken)">
+            <summary>
+            Returns a value indicating whether the given mailbox can be accepted as a recipient to the given sender.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="to">The mailbox to test.</param>
+            <param name="from">The sender's mailbox.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The acceptance state of the mailbox.</returns>
+        </member>
+        <member name="F:SmtpServer.Storage.MailboxFilterResult.Yes">
+            <summary>
+            Accepted.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Storage.MailboxFilterResult.NoTemporarily">
+            <summary>
+            Temporarily not accepted.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Storage.MailboxFilterResult.NoPermanently">
+            <summary>
+            Permanently not accepted.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Storage.MailboxFilterResult.SizeLimitExceeded">
+            <summary>
+            The message siz limit has been exceeded.
+            </summary>
+        </member>
+        <member name="M:SmtpServer.Storage.MessageStore.SaveAsync(SmtpServer.ISessionContext,SmtpServer.IMessageTransaction,System.Buffers.ReadOnlySequence{System.Byte},System.Threading.CancellationToken)">
+            <summary>
+            Save the given message to the underlying storage system.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="transaction">The SMTP message transaction to store.</param>
+            <param name="buffer">The buffer that contains the message content.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The response code to return that indicates the result of the message being saved.</returns>
+        </member>
+        <member name="M:SmtpServer.Storage.MessageStore.DefaultMessageStore.SaveAsync(SmtpServer.ISessionContext,SmtpServer.IMessageTransaction,System.Buffers.ReadOnlySequence{System.Byte},System.Threading.CancellationToken)">
+            <summary>
+            Save the given message to the underlying storage system.
+            </summary>
+            <param name="context">The session context.</param>
+            <param name="buffer">The buffer that contains the message content.</param>
+            <param name="transaction">The SMTP message transaction to store.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The response code to return that indicates the result of the message being saved.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.Token.#ctor(SmtpServer.Text.TokenKind,System.ReadOnlySpan{System.Byte})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="kind">The token kind.</param>
+            <param name="text">The text that the token represents.</param>
+        </member>
+        <member name="M:SmtpServer.Text.Token.IsText(System.Byte)">
+            <summary>
+            Returns a value indicating whether or not the given byte is considered a text character.
+            </summary>
+            <param name="value">The value to test.</param>
+            <returns>true if the value is considered a text character, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.Token.IsUtf8(System.Byte)">
+            <summary>
+            Returns a value indicating whether or not the given byte is a UTF-8 encoded character.
+            </summary>
+            <param name="value">The value to test.</param>
+            <returns>true if the value is considered a UTF-8 character, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.Token.IsNumber(System.Byte)">
+            <summary>
+            Returns a value indicating whether or not the given byte is considered a digit character.
+            </summary>
+            <param name="value">The value to test.</param>
+            <returns>true if the value is considered a digit character, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.Token.IsWhiteSpace(System.Byte)">
+            <summary>
+            Returns a value indicating whether or not the given byte is considered a whitespace.
+            </summary>
+            <param name="value">The value to test.</param>
+            <returns>true if the value is considered a whitespace character, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.Token.IsBetween(System.Byte,System.Char,System.Char)">
+            <summary>
+            Returns a value indicating whether or not the given value is inclusively between a given range.
+            </summary>
+            <param name="value">The value to test.</param>
+            <param name="low">The lower value of the range.</param>
+            <param name="high">The higher value of the range.</param>
+            <returns>true if the value is between the range, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.Token.IsBetween(System.Byte,System.Byte,System.Byte)">
+            <summary>
+            Returns a value indicating whether or not the given value is inclusively between a given range.
+            </summary>
+            <param name="value">The value to test.</param>
+            <param name="low">The lower value of the range.</param>
+            <param name="high">The higher value of the range.</param>
+            <returns>true if the value is between the range, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.Token.Equals(SmtpServer.Text.Token)">
+            <summary>
+            Indicates whether this instance and a specified object are equal.
+            </summary>
+            <param name="other">Another object to compare to. </param>
+            <returns>true if <paramref name="other"/> and this instance are the same type and represent the same value; otherwise, false. </returns>
+        </member>
+        <member name="M:SmtpServer.Text.Token.op_Equality(SmtpServer.Text.Token,SmtpServer.Text.Token)">
+            <summary>
+            Returns a value indicating the equality of the two objects.
+            </summary>
+            <param name="left">The left hand side of the comparisson.</param>
+            <param name="right">The right hand side of the comparisson.</param>
+            <returns>true if the left and right side are equal, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.Token.op_Inequality(SmtpServer.Text.Token,SmtpServer.Text.Token)">
+            <summary>
+            Returns a value indicating the inequality of the two objects.
+            </summary>
+            <param name="left">The left hand side of the comparisson.</param>
+            <param name="right">The right hand side of the comparisson.</param>
+            <returns>false if the left and right side are equal, true if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.Token.ToString">
+            <summary>
+            Returns the string representation of the token.
+            </summary>
+            <returns>The string representation of the token.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.Token.ToText">
+            <summary>
+            Returns the Text selection as a string.
+            </summary>
+            <returns>The string that was created from the selection.</returns>
+        </member>
+        <member name="P:SmtpServer.Text.Token.Kind">
+            <summary>
+            Gets the token kind.
+            </summary>
+        </member>
+        <member name="P:SmtpServer.Text.Token.Text">
+            <summary>
+            Returns the text representation of the token.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.None">
+            <summary>
+            No token has been defined.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.Text">
+            <summary>
+            A text.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.Number">
+            <summary>
+            A number.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.Space">
+            <summary>
+            A single space character.
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.Hyphen">
+            <summary>
+            -
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.Period">
+            <summary>
+            .
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.LeftBracket">
+            <summary>
+            [
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.RightBracket">
+            <summary>
+            ]
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.Colon">
+            <summary>
+            :
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.GreaterThan">
+            <summary>
+            >
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:SmtpServer.Text.TokenKind.LessThan" -->
+        <member name="F:SmtpServer.Text.TokenKind.Comma">
+            <summary>
+            ,
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.At">
+            <summary>
+            @
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.Quote">
+            <summary>
+            "
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.Equal">
+            <summary>
+            =
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.Slash">
+            <summary>
+            /
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.Backslash">
+            <summary>
+            \
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.Plus">
+            <summary>
+            +
+            </summary>
+        </member>
+        <member name="F:SmtpServer.Text.TokenKind.Other">
+            <summary>
+            Unknown.
+            </summary>
+        </member>
+        <member name="T:SmtpServer.Text.TokenReader.TryMakeDelegate">
+            <summary>
+            Delegate for the TryMake function.
+            </summary>
+            <param name="reader">The token reader to use for the operation.</param>
+            <returns>true if the make operation was a success, false if not.</returns>
+        </member>
+        <member name="T:SmtpServer.Text.TokenReader.TryMakeDelegate`1">
+            <summary>
+            Delegate for the TryMake function to allow for "out" parameters.
+            </summary>
+            <typeparam name="TOut">The type of the out parameter.</typeparam>
+            <param name="reader">The token reader to use for the operation.</param>
+            <param name="value">The out parameter that was found during the make operation.</param>
+            <returns>true if the make operation found a parameter, false if not.</returns>
+        </member>
+        <member name="T:SmtpServer.Text.TokenReader.TryMakeDelegate`2">
+            <summary>
+            Delegate for the TryMake function to allow for "out" parameters.
+            </summary>
+            <typeparam name="TOut1">The type of the first out parameter.</typeparam>
+            <typeparam name="TOut2">The type of the second out parameter.</typeparam>
+            <param name="reader">The token reader to use for the operation.</param>
+            <param name="value1">The first out parameter that was found during the make operation.</param>
+            <param name="value2">The second out parameter that was found during the make operation.</param>
+            <returns>true if the make operation found a parameter, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.TokenReader.#ctor(System.Buffers.ReadOnlySequence{System.Byte})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="buffer">The buffer to read from.</param>
+        </member>
+        <member name="M:SmtpServer.Text.TokenReader.Checkpoint">
+            <summary>
+            Create a checkpoint of the current state.
+            </summary>
+            <returns>The checkpoint for the current state of the reader.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.TokenReader.Rollback(SmtpServer.Text.TokenReader.CheckpointState@)">
+            <summary>
+            Rollback the current state to the checkpoint.
+            </summary>
+            <param name="checkpoint"></param>
+        </member>
+        <member name="M:SmtpServer.Text.TokenReader.TryMake(SmtpServer.Text.TokenReader.TryMakeDelegate)">
+            <summary>
+            Try to make a callback in a transactional way.
+            </summary>
+            <param name="delegate">The callback to perform the match.</param>
+            <returns>true if the match could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.TokenReader.TryMake(SmtpServer.Text.TokenReader.TryMakeDelegate,System.Buffers.ReadOnlySequence{System.Byte}@)">
+            <summary>
+            Try to make a callback in a transactional way.
+            </summary>
+            <param name="delegate">The callback to perform the match.</param>
+            <param name="buffer">The buffer that was made.</param>
+            <returns>true if the match could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.TokenReader.TryMake``1(SmtpServer.Text.TokenReader.TryMakeDelegate{``0},``0@)">
+            <summary>
+            Try to make a callback in a transactional way.
+            </summary>
+            <param name="delegate">The callback to perform the match.</param>
+            <param name="found">The parameter that was returned from the matching function.</param>
+            <returns>true if the match could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.TokenReader.TryMake``2(SmtpServer.Text.TokenReader.TryMakeDelegate{``0,``1},``0@,``1@)">
+            <summary>
+            Try to make a callback in a transactional way.
+            </summary>
+            <param name="delegate">The callback to perform the match.</param>
+            <param name="value1">The first out parameter that was found during the make operation.</param>
+            <param name="value2">The second out parameter that was found during the make operation.</param>
+            <returns>true if the match could be made, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.TokenReader.Peek">
+            <summary>
+            Peek at the next token in the sequence.
+            </summary>
+            <returns>The next token in the sequence.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.TokenReader.Take">
+            <summary>
+            Take the next token from the sequence.
+            </summary>
+            <returns>The next token from the sequence.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.TokenReader.Skip(SmtpServer.Text.TokenKind)">
+            <summary>
+            Skip the tokens.
+            </summary>
+            <param name="kind">The token kind to skip.</param>
+        </member>
+        <member name="M:SmtpServer.Text.TokenReader.Skip(System.Func{SmtpServer.Text.TokenKind,System.Boolean})">
+            <summary>
+            Skip the tokens.
+            </summary>
+            <param name="predicate">The predicate to determine whether to skip the tokens.</param>
+        </member>
+        <member name="M:SmtpServer.Text.TokenReader.ReadToken">
+            <summary>
+            Read a token from the current position in the sequence.
+            </summary>
+            <returns>The token that was read from the sequence.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.TokenReader.MoveToNextSpan">
+            <summary>
+            Move to the next span in the sequence.
+            </summary>
+            <returns>true if the reader could be moved to the next span, false if not.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.TokenReader.ReadWhile(System.Func{System.Byte,System.Boolean})">
+            <summary>
+            Reads a continual sequence whilst the predicate is matched.
+            </summary>
+            <param name="predicate">The predicate to match against the characters in the buffer.</param>
+            <returns>The span that was matched.</returns>
+        </member>
+        <member name="M:SmtpServer.Text.TokenReader.ReadOne">
+            <summary>
+            Read a single character from the span.
+            </summary>
+            <returns>The span that was matched.</returns>
+        </member>
+        <member name="M:SmtpServer.Tracing.TracingSmtpCommandVisitor.#ctor(System.IO.TextWriter)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="output">The output stream to write the command execution to.</param>
+        </member>
+        <member name="M:SmtpServer.Tracing.TracingSmtpCommandVisitor.Visit(SmtpServer.Protocol.AuthCommand)">
+            <summary>
+            Visit an AUTH command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Tracing.TracingSmtpCommandVisitor.Visit(SmtpServer.Protocol.DataCommand)">
+            <summary>
+            Visit an DATA command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Tracing.TracingSmtpCommandVisitor.Visit(SmtpServer.Protocol.HeloCommand)">
+            <summary>
+            Visit a HELO command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Tracing.TracingSmtpCommandVisitor.Visit(SmtpServer.Protocol.EhloCommand)">
+            <summary>
+            Visit an EHLO command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Tracing.TracingSmtpCommandVisitor.Visit(SmtpServer.Protocol.MailCommand)">
+            <summary>
+            Visit an MAIL command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Tracing.TracingSmtpCommandVisitor.Visit(SmtpServer.Protocol.NoopCommand)">
+            <summary>
+            Visit an NOOP command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Tracing.TracingSmtpCommandVisitor.Visit(SmtpServer.Protocol.ProxyCommand)">
+            <summary>
+            Visit an PROXY command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Tracing.TracingSmtpCommandVisitor.Visit(SmtpServer.Protocol.QuitCommand)">
+            <summary>
+            Visit an QUIT command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Tracing.TracingSmtpCommandVisitor.Visit(SmtpServer.Protocol.RcptCommand)">
+            <summary>
+            Visit an RCPT command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Tracing.TracingSmtpCommandVisitor.Visit(SmtpServer.Protocol.RsetCommand)">
+            <summary>
+            Visit an RSET command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+        <member name="M:SmtpServer.Tracing.TracingSmtpCommandVisitor.Visit(SmtpServer.Protocol.StartTlsCommand)">
+            <summary>
+            Visit an STARTTLS command.
+            </summary>
+            <param name="command">The command that is being visited.</param>
+        </member>
+    </members>
+</doc>
